@@ -22,20 +22,11 @@
 			<div class="bgmenuSectionLiens">
 
 				<ul>
+                    <li>
+                        <a class="lienBarreMenu" href="index.php">Accueil</a>
+                    </li>
 					<li>
-						<a class="lienBarreMenu" href="www.google.fr">Profil</a>
-					</li>
-					<li>
-						<a class="lienBarreMenu" href="www.google.fr">Expériences</a>
-					</li>
-					<li>
-						<a class="lienBarreMenu" href="www.google.fr">Diplômes</a>
-					</li>
-					<li>
-						<a class="lienBarreMenu" href="www.google.fr">Langues</a>
-					</li>
-					<li>
-						<a class="lienBarreMenu" href="www.google.fr">Contact</a>
+						<a class="lienBarreMenu" href="php/platypet.php">Platypet</a>
 					</li>
 				</ul>
 			</div>
@@ -236,5 +227,5 @@
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script src="js/app.js"></script>
+	<script src="../js/app.js"></script>
 </html>

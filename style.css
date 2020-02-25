@@ -108,8 +108,6 @@ nav
 	-webkit-transform: translateX(-100%);
 }
 
-
-/* Displays the menu when the button menu is clicked */
 .navigation.isOpen{
 	transform: translateX(0%);
 	-webkit-transform: translateX(0%);
@@ -206,91 +204,42 @@ nav
 	margin: 0;
 }
 
-.type_eau{
-	background-color: #007c91;
-	padding-top: 5px;
-	padding-bottom: 5px;
+.type_eau, .type_cristal, .type_nature, .type_neutre, .type_toxic, .type_vent {
 	width: 160px;
 	text-align: center;
-	height: 40px;
-	line-height: 40px;
+	height: 44px;
+	line-height: 44px;
 	border-radius: 4px;
 	color: white;
+}
+
+.type_eau{
+	background-color: #007c91;
 }
 
 .type_toxic {
 	background-color: black;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
 }
 
 .type_nature {
 	background-color: #83b255;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
 }
 
 .type_vent {
 	background-color: #61b6a3;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
 }
 
 .type_terre {
 	background-color: #72513b;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
 }
 
 .type_neutre {
 	background-color: #909c9e;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
 }
 
 .type_cristal {
 	background-color: #a1283e;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
 }
-
-
 
 .tempedie_espace_numero, .tempedie_espace_nom {
 	color: #373737;
@@ -306,15 +255,6 @@ nav
 	height: 90px;
 }
 
-/*Couleur par type*/
-
-.eau {
-	color: #007c91;
-}
-
-.toxic {
-	color: black;
-}
 
 
 
