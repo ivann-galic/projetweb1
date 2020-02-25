@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
-	<title>CV IVANN GALIC</title>
+	<title>TEMTEM</title>
 </head>
 
 <body>
@@ -35,9 +35,6 @@
 						<a class="lienBarreMenu" href="www.google.fr">Langues</a>
 					</li>
 					<li>
-						<a class="lienBarreMenu" href="www.google.fr">Centres d'intérêts</a>
-					</li>
-					<li>
 						<a class="lienBarreMenu" href="www.google.fr">Contact</a>
 					</li>
 				</ul>
@@ -47,9 +44,158 @@
 
 	</header>
 
-	<div class="test">
+    <div class="container">
+
+        <div class="card_titres">
+
+                <p>Numéro</p>
+                <p>Image</p>
+                <p>Nom</p>
+                <p>Type 1</p>
+                <p>Type 2</p>
+
+        </div>
+
+        <div class="card">
+                <div class="tempedie_espace_numero">
+                    <p>#3</p>
+                </div>
+                <div class="tempedie_espace_image">
+                    <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+                </div>
+                <div class="tempedie_espace_nom">
+                    <p>Platypet</p>
+                </div>
+                <div class="tempedie_espace_type1">
+                        <p class="type_eau">Eau</p>
+                </div>
+                <div class="tempedie_espace_type2">
+                    <p class="type_toxic">Toxic</p>
+                </div>
+        </div>
+        <div class="card">
+            <div class="tempedie_espace_numero">
+                <p>#3</p>
+            </div>
+            <div class="tempedie_espace_image">
+                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+            </div>
+            <div class="tempedie_espace_nom">
+                <p>Platypet</p>
+            </div>
+            <div class="tempedie_espace_type1">
+                <p>Eau</p>
+            </div>
+            <div class="tempedie_espace_type2">
+                <p>Toxic</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="tempedie_espace_numero">
+                <p>#3</p>
+            </div>
+            <div class="tempedie_espace_image">
+                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+            </div>
+            <div class="tempedie_espace_nom">
+                <p>Platypet</p>
+            </div>
+            <div class="tempedie_espace_type1">
+                <p>Eau</p>
+            </div>
+            <div class="tempedie_espace_type2">
+                <p>Toxic</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="tempedie_espace_numero">
+                <p>#3</p>
+            </div>
+            <div class="tempedie_espace_image">
+                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+            </div>
+            <div class="tempedie_espace_nom">
+                <p>Platypet</p>
+            </div>
+            <div class="tempedie_espace_type1">
+                <p>Eau</p>
+            </div>
+            <div class="tempedie_espace_type2">
+                <p>Toxic</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="tempedie_espace_numero">
+                <p>#3</p>
+            </div>
+            <div class="tempedie_espace_image">
+                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+            </div>
+            <div class="tempedie_espace_nom">
+                <p>Platypet</p>
+            </div>
+            <div class="tempedie_espace_type1">
+                <p>Eau</p>
+            </div>
+            <div class="tempedie_espace_type2">
+                <p>Toxic</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="tempedie_espace_numero">
+                <p>#3</p>
+            </div>
+            <div class="tempedie_espace_image">
+                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+            </div>
+            <div class="tempedie_espace_nom">
+                <p>Platypet</p>
+            </div>
+            <div class="tempedie_espace_type1">
+                <p>Eau</p>
+            </div>
+            <div class="tempedie_espace_type2">
+                <p>Toxic</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="tempedie_espace_numero">
+                <p>#3</p>
+            </div>
+            <div class="tempedie_espace_image">
+                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+            </div>
+            <div class="tempedie_espace_nom">
+                <p>Platypet</p>
+            </div>
+            <div class="tempedie_espace_type1">
+                <p>Eau</p>
+            </div>
+            <div class="tempedie_espace_type2">
+                <p>Toxic</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="tempedie_espace_numero">
+                <p>#3</p>
+            </div>
+            <div class="tempedie_espace_image">
+                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
+            </div>
+            <div class="tempedie_espace_nom">
+                <p>Platypet</p>
+            </div>
+            <div class="tempedie_espace_type1">
+                <p>Eau</p>
+            </div>
+            <div class="tempedie_espace_type2">
+                <p>Toxic</p>
+            </div>
+        </div>
+    </div>
+<!--	<div class="bdd">
 	<?php
-		try
+/*		try
 		{
 			// On se connecte à MySQL
 			$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
@@ -68,25 +214,25 @@
 		// On affiche chaque entrée une à une
 		while ($donnees = $reponse->fetch())
 		{
-	?>
+	*/?>
 		    <p> #
 		    	<strong>
-		    		<?php echo $donnees['numero']; ?>
+		    		<?php /*echo $donnees['numero']; */?>
 		    	</strong> 
 		    	: 
-		    	<?php echo $donnees['nom']; ?>
-		    	<br /> Type : <?php echo $donnees['type_1']; ?>
-		    	/ <?php echo $donnees['type_2']; ?>
+		    	<?php /*echo $donnees['nom']; */?>
+		    	<br /> Type : <?php /*echo $donnees['type_1']; */?>
+		    	/ <?php /*echo $donnees['type_2']; */?>
 		     	<br />
 		    </p>
 		    
 	<?php
-		}
+/*		}
 
 		$reponse->closeCursor(); // Termine le traitement de la requête
 
-	?>
-	</div>
+	*/?>
+	</div>-->
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>

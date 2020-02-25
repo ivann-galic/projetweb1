@@ -15,23 +15,27 @@ body, html {
 	padding: 0;
 }
 
+body {
+background-color: whitesmoke;
+}
+
 /* ---------- HEADER ---------- */
 
 header {
 	width: 100%;
 	height: 90px;
 	position: fixed;
-	z-index: 900;
+	display: block;
+	top: 0;
 	background-image: url("imgs/wall3.png");
 	background-size: cover;
 	list-style: none;
 	z-index: 800;
 }
 
-.test {
+.bdd {
 	position: absolute;
 	top: 100px;
-	font-family: Helvetica;
 }
 
 /* *** MENU BAR *** */
@@ -145,8 +149,172 @@ nav
 }
 
 
+.container {
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	width: 100%;
+}
+
+.card_titres {
+	display: flex;
+	flex-direction: row;
+	width: 1600px;
+	height: 65px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	align-items: center;
+	text-align: center;
+}
+
+.card_titres p {
+	float: left;
+	width: 320px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #373737;
+	margin: 0;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+	width: 1600px;
+	height: 150px;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	font-family: "Roboto", sans-serif;
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.card div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 320px;
+	height: 145px;
+	line-height: 100px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.type_eau{
+	background-color: #007c91;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_toxic {
+	background-color: black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_nature {
+	background-color: #83b255;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_vent {
+	background-color: #61b6a3;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_terre {
+	background-color: #72513b;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_neutre {
+	background-color: #909c9e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_cristal {
+	background-color: #a1283e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
 
 
+
+.tempedie_espace_numero, .tempedie_espace_nom {
+	color: #373737;
+}
+
+.tempedie_espace_image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tempedie_espace_image img {
+	height: 90px;
+}
+
+/*Couleur par type*/
+
+.eau {
+	color: #007c91;
+}
+
+.toxic {
+	color: black;
+}
 
 
 
