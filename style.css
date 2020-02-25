@@ -10,8 +10,9 @@
 
 /* ---------- BODY ---------- */
 
-body {
+body, html {
 	margin: 0;
+	padding: 0;
 }
 
 /* ---------- HEADER ---------- */
@@ -20,10 +21,17 @@ header {
 	width: 100%;
 	height: 90px;
 	position: fixed;
-	z-index: 900;
+	top: 0;
 	background-image: url("imgs/wall2.jpg");
 	background-size: cover;
 	list-style: none;
+	z-index: 800;
+}
+
+.test {
+	position: absolute;
+	top: 100px;
+	font-family: Helvetica;
 }
 
 /* *** MENU BAR *** */
