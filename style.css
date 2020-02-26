@@ -131,6 +131,7 @@ nav
 	font-size: 17px;
 	line-height: 40px;
 }
+
 .bgmenuSectionLiens a {
 	display: inline-block;
 	line-height: 40px;
@@ -146,6 +147,17 @@ nav
 	color: #546e7a;
 }
 
+.banniere_liste {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	height: 150px;
+	width: 1600px;
+	text-align: center;
+}
+
+.banniere_liste img {
+	height: 110px;
+}
 
 .container {
 	margin-top: 150px;

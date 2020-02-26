@@ -37,6 +37,10 @@
 
     <div class="container">
 
+        <div class="banniere_liste">
+            <img src="imgs/liste.png" alt="Liste des Temtem">
+        </div>
+
         <div class="card_titres">
 
                 <p>Numéro</p>
