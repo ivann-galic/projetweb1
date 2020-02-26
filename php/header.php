@@ -26,10 +26,10 @@
                         <a class="lienBarreMenu" href="../index.php">Accueil</a>
                     </li>
                     <li>
-                        <a class="lienBarreMenu" href="../php/platypet.php">Platypet</a>
-                    </li>
-                    <li>
                         <a class="lienBarreMenu" href="../php/test.php">Test</a>
+                    </li>
+					<li>
+                        <a class="lienBarreMenu" href="../php/aPropos.php">A propos</a>
                     </li>
 				</ul>
 			</div>
