@@ -2,6 +2,26 @@
     include "../php/header._fiche.php";
 ?>
 
+<?php
+    try
+		{
+			// On se connecte à MySQL
+			$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
+		}
+		catch(Exception $e)
+		{
+			// En cas d'erreur, on affiche un message et on arrête tout
+		        die('Erreur : '.$e->getMessage());
+		}
+    $reponse = $bdd->query('SELECT * FROM tempedie WHERE nom = \'Platypet\'');
+
+    while ($donnees = $reponse->fetch())
+    {
+
+
+    $reponse->closeCursor();
+?>
+
     <div class="container">
 
         <div class="card">
@@ -12,12 +32,13 @@
             <div class="fiche_espace_description">
                 <div class="numero">
                     <p>Numéro :</p>
-                    <p></p>
+                    <p><?php echo $donnees['numero']; ?></p>
                 </div>
+
                 <div class="espace_nom_cri">
                     <div class="nom">
                         <p>Nom :</p>
-                        <p></p>
+                        <p><?php echo $donnees['nom']; ?></p>
                     </div>
                     <div class="cri">
                         <p>Cri</p>
@@ -26,15 +47,15 @@
                 </div>
 
                 <div class="type">
-                    <p class="type_eau"></p>
-                    <p class="type_toxic"></p>
+                    <p class="type_<?php $donnees['type_1']; ?>"><?php echo $donnees['type_1']; ?></p>
+                    <p class="type_toxic"><?php echo $donnees['type_2']; ?></p>
                 </div>
 
                 <div class="trait">
                     <p>Traits :</p>
                     <div class="liste_traits">
-                        <p></p>
-                        <p></p>
+                        <p><?php echo $donnees['trait_1']; ?></p>
+                        <p><?php echo $donnees['trait_2']; ?></p>
                     </div>
 
                 </div>
@@ -59,6 +80,10 @@
                 <p></p>
                 <p></p>
             </div>
+
+            <?php }
+                $reponse->closeCursor();
+            ?>
         </div>
 
         <div class="banniere_capacités">
