@@ -327,6 +327,17 @@ nav
 	margin-top: 35px;
 }
 
+.banniere_capacités {
+	height: 150px;
+	width: 1600px;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.banniere_capacités img {
+height: 110px;
+}
+
 .titres_attaques {
 	height: 80px;
 	width: 1600px;
@@ -403,6 +414,7 @@ nav
 	font-family: "Roboto", sans-serif;
 	font-size: 20px;
 	margin-top: 40px;
+	font-weight: 600;
 }
 
 .attaque_caracteristiques {
@@ -415,21 +427,6 @@ nav
 	font-family: "Roboto", sans-serif;
 	letter-spacing: 1px;
 	font-size: 20px;
-}
-
-.intitule_description {
-	height: 30px;
-	width: 1600px;
-	text-align: center;
-	font-family: "Roboto", sans-serif;
-	letter-spacing: 1px;
-	font-size: 20px;
-	font-weight: 600;
-	margin-top: 20px;
-}
-
-.intitule_description p {
-	margin-bottom: 0;
 }
 
 .attaque_description {
@@ -447,6 +444,8 @@ nav
 
 .description {
 	text-align: center;
+	font-weight: 500;
+	color: #373737;
 }
 
 footer {
@@ -454,10 +453,6 @@ footer {
 	width: 100%;
 	background-color: whitesmoke;
 }
-
-
-
-
 
 
 

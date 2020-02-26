@@ -91,6 +91,10 @@
             </div>
         </div>
 
+        <div class="banniere_capacités">
+            <img src="../imgs/capacites.png" alt="Capacités">
+        </div>
+
         <div class="titres_attaques">
             <div class="titre_obtention">
                 <p>Obtention</p>
@@ -158,9 +162,6 @@
                     <p>Vent</p>
                 </div>
             </div>
-            <div class="intitule_description">
-                    <p>Description</p>
-            </div>
             <div class="attaque_description">
                 <div class="description">
                     <p>La capacité Claque-nageoire cible un seul Temtem. La cible peut être tous les Temtem sur le terrain, sauf le lanceur de la capacité.</p>
@@ -200,9 +201,6 @@
                 <div class="synergie">
                     <p>Vent</p>
                 </div>
-            </div>
-            <div class="intitule_description">
-                <p>Description</p>
             </div>
             <div class="attaque_description">
                 <div class="description">
