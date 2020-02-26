@@ -466,7 +466,7 @@ footer {
 
 
 .type_Eau{
-	background-color: #007c91;
+	background-color: #45cbff;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 160px;
@@ -478,7 +478,7 @@ footer {
 }
 
 .type_Toxic {
-	background-color: black;
+	background-color: #5c565c;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 160px;
@@ -490,7 +490,7 @@ footer {
 }
 
 .type_Nature {
-	background-color: #83b255;
+	background-color: #adde77;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 160px;
@@ -502,7 +502,7 @@ footer {
 }
 
 .type_Vent {
-	background-color: #61b6a3;
+	background-color: #64cc9c;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 160px;
@@ -514,7 +514,7 @@ footer {
 }
 
 .type_Terre {
-	background-color: #72513b;
+	background-color: #ba795b;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 160px;
@@ -526,7 +526,7 @@ footer {
 }
 
 .type_Neutre {
-	background-color: #909c9e;
+	background-color: #bccbce;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 160px;
@@ -534,11 +534,11 @@ footer {
 	height: 40px;
 	line-height: 40px;
 	border-radius: 4px;
-	color: white;
+	color: black;
 }
 
 .type_Cristal {
-	background-color: #a1283e;
+	background-color: #ea4a68;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 160px;
@@ -549,6 +549,4 @@ footer {
 	color: white;
 }
 
-.vert {
-	color: green;
-}
+

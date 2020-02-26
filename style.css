@@ -216,7 +216,7 @@ nav
 	margin: 0;
 }
 
-.type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent {
+.type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent, .type_Terre {
 	width: 160px;
 	text-align: center;
 	height: 44px;
@@ -225,32 +225,36 @@ nav
 	color: white;
 }
 
+.type_Toxic {
+	color: white;
+}
+
 .type_Eau{
-	background-color: #007c91;
+	background-color: #45cbff;
 }
 
 .type_Toxic {
-	background-color: black;
+	background-color: #5c565c;
 }
 
 .type_Nature {
-	background-color: #83b255;
+	background-color: #adde77;
 }
 
 .type_Vent {
-	background-color: #61b6a3;
+	background-color: #64cc9c;
 }
 
 .type_Terre {
-	background-color: #72513b;
+	background-color: #ba795b;
 }
 
 .type_Neutre {
-	background-color: #909c9e;
+	background-color: #bccbce;
 }
 
 .type_Cristal {
-	background-color: #a1283e;
+	background-color: #ea4a68;
 }
 
 .tempedie_espace_numero, .tempedie_espace_nom {

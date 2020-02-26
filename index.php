@@ -37,16 +37,16 @@
 		                    <p># ' . $donnees['numero'] . '</p>
 		                </div>
 		                <div class="tempedie_espace_image">
-		                    <img src="imgs/temtem_sprites/<?php $donnees['nom']; ?>.png" alt="Platypet">
+		                    <img src="imgs/temtem_sprites/'.$donnees['nom'].'.png" alt="Platypet">
 		                </div>
 		                <div class="tempedie_espace_nom">
 		                    <p>' . $donnees['nom'] . '</p>
 		                </div>
 		                <div class="type_espace_type">
-		                        <p class="type_<?php $donnees['type_1']; ?>">' . $donnees['type_1'] . '</p>
+		                        <p class="type_'.$donnees['type_1'].'">' .$donnees['type_1']. '</p>
 		                </div>
 		                <div class="type_espace_">
-		                        <p class="<?php  $donnees['type_1']; ?>">' . $donnees['type_2'] . '</p>
+		                        <p class="type_'.$donnees['type_2'].'">' . $donnees['type_2'] . '</p>
 		                </div>
 		        </div>
 	        ';
