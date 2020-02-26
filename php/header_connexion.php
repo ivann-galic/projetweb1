@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="../css/fiche_temtem.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/connexion.css"/>
 	<script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
-	<title>Fiche Temtem</title>
+	<title>A propos</title>
 </head>
 
 <body>

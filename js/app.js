@@ -4,3 +4,7 @@ $(document).ready(function () {
         $('.navigation').toggleClass('isOpen');
     });
 });
+
+$('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
