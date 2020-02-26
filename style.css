@@ -216,7 +216,7 @@ nav
 	margin: 0;
 }
 
-.type_eau, .type_cristal, .type_nature, .type_neutre, .type_toxic, .type_vent {
+.type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent {
 	width: 160px;
 	text-align: center;
 	height: 44px;
@@ -225,31 +225,31 @@ nav
 	color: white;
 }
 
-.type_eau{
+.type_Eau{
 	background-color: #007c91;
 }
 
-.type_toxic {
+.type_Toxic {
 	background-color: black;
 }
 
-.type_nature {
+.type_Nature {
 	background-color: #83b255;
 }
 
-.type_vent {
+.type_Vent {
 	background-color: #61b6a3;
 }
 
-.type_terre {
+.type_Terre {
 	background-color: #72513b;
 }
 
-.type_neutre {
+.type_Neutre {
 	background-color: #909c9e;
 }
 
-.type_cristal {
+.type_Cristal {
 	background-color: #a1283e;
 }
 

@@ -1,7 +1,18 @@
 <?php
     include "php/header.php";
-?>
+    try
+		{
+			// On se connecte à MySQL
+			$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
+		}
+		catch(Exception $e)
+		{
+			// En cas d'erreur, on affiche un message et on arrête tout
+		        die('Erreur : '.$e->getMessage());
+		}
 
+    $tempedie = $bdd->query('SELECT * FROM tempedie');
+?>
     <div class="container">
 
         <div class="banniere_liste">
@@ -18,143 +29,31 @@
 
         </div>
 
-        <div class="card">
-                <div class="tempedie_espace_numero">
-                    <p>#3</p>
-                </div>
-                <div class="tempedie_espace_image">
-                    <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-                </div>
-                <div class="tempedie_espace_nom">
-                    <p>Platypet</p>
-                </div>
-                <div class="tempedie_espace_type1">
-                        <p class="type_cristal">Cristal</p>
-                </div>
-                <div class="tempedie_espace_type2">
-                    <p class="type_toxic">Toxic</p>
-                </div>
-        </div>
-        <div class="card">
-            <div class="tempedie_espace_numero">
-                <p>#3</p>
-            </div>
-            <div class="tempedie_espace_image">
-                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-            </div>
-            <div class="tempedie_espace_nom">
-                <p>Platypet</p>
-            </div>
-            <div class="tempedie_espace_type1">
-                <p>Eau</p>
-            </div>
-            <div class="tempedie_espace_type2">
-                <p>Toxic</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="tempedie_espace_numero">
-                <p>#3</p>
-            </div>
-            <div class="tempedie_espace_image">
-                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-            </div>
-            <div class="tempedie_espace_nom">
-                <p>Platypet</p>
-            </div>
-            <div class="tempedie_espace_type1">
-                <p>Eau</p>
-            </div>
-            <div class="tempedie_espace_type2">
-                <p>Toxic</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="tempedie_espace_numero">
-                <p>#3</p>
-            </div>
-            <div class="tempedie_espace_image">
-                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-            </div>
-            <div class="tempedie_espace_nom">
-                <p>Platypet</p>
-            </div>
-            <div class="tempedie_espace_type1">
-                <p>Eau</p>
-            </div>
-            <div class="tempedie_espace_type2">
-                <p>Toxic</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="tempedie_espace_numero">
-                <p>#3</p>
-            </div>
-            <div class="tempedie_espace_image">
-                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-            </div>
-            <div class="tempedie_espace_nom">
-                <p>Platypet</p>
-            </div>
-            <div class="tempedie_espace_type1">
-                <p>Eau</p>
-            </div>
-            <div class="tempedie_espace_type2">
-                <p>Toxic</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="tempedie_espace_numero">
-                <p>#3</p>
-            </div>
-            <div class="tempedie_espace_image">
-                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-            </div>
-            <div class="tempedie_espace_nom">
-                <p>Platypet</p>
-            </div>
-            <div class="tempedie_espace_type1">
-                <p>Eau</p>
-            </div>
-            <div class="tempedie_espace_type2">
-                <p>Toxic</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="tempedie_espace_numero">
-                <p>#3</p>
-            </div>
-            <div class="tempedie_espace_image">
-                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-            </div>
-            <div class="tempedie_espace_nom">
-                <p>Platypet</p>
-            </div>
-            <div class="tempedie_espace_type1">
-                <p>Eau</p>
-            </div>
-            <div class="tempedie_espace_type2">
-                <p>Toxic</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="tempedie_espace_numero">
-                <p>#3</p>
-            </div>
-            <div class="tempedie_espace_image">
-                <img src="imgs/temtem_sprites/Platypet.png" alt="Platypet">
-            </div>
-            <div class="tempedie_espace_nom">
-                <p>Platypet</p>
-            </div>
-            <div class="tempedie_espace_type1">
-                <p>Eau</p>
-            </div>
-            <div class="tempedie_espace_type2">
-                <p>Toxic</p>
-            </div>
-        </div>
-    </div>
+<?php
+        while ($donnees = $tempedie->fetch()) {   
+			echo '
+		        <div class="card">
+		                <div class="tempedie_espace_numero">
+		                    <p># ' . $donnees['numero'] . '</p>
+		                </div>
+		                <div class="tempedie_espace_image">
+		                    <img src="imgs/temtem_sprites/<?php $donnees['nom']; ?>.png" alt="Platypet">
+		                </div>
+		                <div class="tempedie_espace_nom">
+		                    <p>' . $donnees['nom'] . '</p>
+		                </div>
+		                <div class="type_espace_type">
+		                        <p class="type_<?php $donnees['type_1']; ?>">' . $donnees['type_1'] . '</p>
+		                </div>
+		                <div class="type_espace_">
+		                        <p class="<?php  $donnees['type_1']; ?>">' . $donnees['type_2'] . '</p>
+		                </div>
+		        </div>
+	        ';
+        }
+        $tempedie->closeCursor();
+    ?>	
+        
 <!--	<div class="bdd">
 	<?php
 /*		try
