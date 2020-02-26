@@ -24,7 +24,10 @@
                     </div>
                     <div class="cri">
                         <p>Cri</p>
-                        <p><i class="fas fa-volume-up"></i></p>
+                        <audio controls="controls">
+                            <source src="../src/cris/<?php echo $donnees['nom']; ?>.mp3" type="audio/mp3" />
+                            Votre navigateur n'est pas compatible
+                        </audio>
                     </div>
                 </div>
 
@@ -115,48 +118,52 @@
         <?php
         while ($donnees = $capacites_temtem->fetch())
         {
-         echo '
+            echo '
             <div class="attaque">
 
             <div class="attaque_caracteristiques">
                 <div class="obtention">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
-                </div>
-                <div class="niveau">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
-                </div>
-                <div class="nom_attaque">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
-                </div>
-                <div class="type_attaque">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                <p>' . $donnees['methode'] . '</p>
+            </div>
+            <div class="niveau">
+                <p>' . $donnees['niveau'] . '</p>
+            </div>
+            <div class="nom_attaque">
+                <p>' . $donnees['nom_capacite'] . '</p>
+            </div>
+            <div class="type_attaque">
+                    <p>' . $donnees['type'] . '</p>
                 </div>
                 <div class="categorie">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                    <p>' . $donnees['categorie'] . '</p>
                 </div>
                 <div class="puissance">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                    <p>' . $donnees['puissance'] . '</p>
                 </div>
                 <div class="endurance">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                    <p>' . $donnees['endurance'] . '</p>
                 </div>
                 <div class="priorité">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                    <p>' . $donnees['priorite'] . '</p>
                 </div>
                 <div class="chargement">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                    <p>' . $donnees['attente'] . '</p>
                 </div>
                 <div class="synergie">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                    <p>' . $donnees['synergie'] . '</p>
                 </div>
             </div>
             <div class="attaque_description">
                 <div class="description">
-                    <p>'.$capacites_temtem['nom_capacite'].'</p>
+                    <p>' . $donnees['description'] . '</p>
                 </div>
             </div>
-        </div>';
-    };
+        </div> ';
+        }
+            ?>
+
+
+        <?php
         $capacites_temtem->closeCursor();
         ?>
 
