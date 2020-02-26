@@ -13,7 +13,9 @@
 			// En cas d'erreur, on affiche un message et on arrête tout
 		        die('Erreur : '.$e->getMessage());
 		}
-    $reponse = $bdd->query('SELECT * FROM tempedie WHERE nom = \'Platypet\'');
+    $tempedie = $bdd->query('SELECT * FROM tempedie WHERE nom = \'Platypet\'');
+    $stats = $bdd->query('SELECT * FROM stats WHERE nom = \'Platypet\'');
+    $capacites_temtem = $bdd->query('SELECT nom_capacite FROM capacites_temtem WHERE nom_temtem = \'platypet\'');
 ?>
 
 <?php

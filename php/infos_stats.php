@@ -1,8 +1,7 @@
 <?php
 
-    while ($donnees = $reponse->fetch())
+    while ($donnees = $tempedie->fetch())
         {
-
     ?>
 
     <div class="container">
@@ -41,11 +40,10 @@
                         <p><?php echo $donnees['trait_2']; ?></p>
                     </div>
                     <?php }
-                        $reponse->closeCursor();
+                        $tempedie->closeCursor();
                     ?>
                 </div>
             </div>
-
             <div class="fiche_espace_stats1">
                 <p>PV : </p>
                 <p>Endurance :</p>
@@ -54,16 +52,24 @@
                 <p>Défense :</p>
                 <p>Attaque Spé :</p>
                 <p>Défense Spé :</p>
+
             </div>
 
             <div class="fiche_espace_stats2">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <?php
+                while ($donnees = $stats->fetch())
+                {
+                    ?>
+                <p><?php echo $donnees['point_de_vie']; ?></p>
+                <p><?php echo $donnees['endurance']; ?></p>
+                <p><?php echo $donnees['vitesse']; ?></p>
+                <p><?php echo $donnees['attaque']; ?></p>
+                <p><?php echo $donnees['defense']; ?></p>
+                <p><?php echo $donnees['attaque_special']; ?></p>
+                <p><?php echo $donnees['defense_special']; ?></p>
+                <?php }
+                $stats->closeCursor();
+                ?>
             </div>
 
         </div>
@@ -106,44 +112,52 @@
             </div>
         </div>
 
-        <div class="attaque">
+        <?php
+        while ($donnees = $capacites_temtem->fetch())
+        {
+         echo '
+            <div class="attaque">
+
             <div class="attaque_caracteristiques">
                 <div class="obtention">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="niveau">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="nom_attaque">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="type_attaque">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="categorie">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="puissance">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="endurance">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="priorité">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="chargement">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
                 <div class="synergie">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
             </div>
             <div class="attaque_description">
                 <div class="description">
-                    <p></p>
+                    <p>'.$capacites_temtem['nom_capacite'].'</p>
                 </div>
             </div>
-        </div>
+        </div>';
+    };
+        $capacites_temtem->closeCursor();
+        ?>
 
     </div>
