@@ -457,7 +457,7 @@ footer {
 
 
 
-.type_eau{
+.type_Eau{
 	background-color: #007c91;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -469,7 +469,7 @@ footer {
 	color: white;
 }
 
-.type_toxic {
+.type_Toxic {
 	background-color: black;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -481,7 +481,7 @@ footer {
 	color: white;
 }
 
-.type_nature {
+.type_Nature {
 	background-color: #83b255;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -493,7 +493,7 @@ footer {
 	color: white;
 }
 
-.type_vent {
+.type_Vent {
 	background-color: #61b6a3;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -505,7 +505,7 @@ footer {
 	color: white;
 }
 
-.type_terre {
+.type_Terre {
 	background-color: #72513b;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -517,7 +517,7 @@ footer {
 	color: white;
 }
 
-.type_neutre {
+.type_Neutre {
 	background-color: #909c9e;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -529,7 +529,7 @@ footer {
 	color: white;
 }
 
-.type_cristal {
+.type_Cristal {
 	background-color: #a1283e;
 	padding-top: 5px;
 	padding-bottom: 5px;
