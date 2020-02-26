@@ -171,7 +171,7 @@ nav
 .card_titres {
 	display: flex;
 	flex-direction: row;
-	width: 1600px;
+	width: 1300px;
 	height: 65px;
 	background-color: white;
 	border-radius: 5px;
@@ -194,7 +194,7 @@ nav
 .card {
 	display: flex;
 	flex-direction: row;
-	width: 1600px;
+	width: 1300px;
 	height: 150px;
 	background-color: white;
 	border-radius: 5px;
@@ -267,7 +267,11 @@ nav
 	height: 90px;
 }
 
-
+footer {
+	height: 80px;
+	width: 100%;
+	background-color: whitesmoke;
+}
 
 
 

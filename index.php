@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
-	<title>TEMTEM</title>
-</head>
-
-<body>
-
-	<header>
-		<nav class="barreMenu">
-			<p class="btn-navigation"><i class="fas fa-bars"></i></p>
-			<input type="search" class="search" name="search" placeholder="Rechercher un Temtem, une capacité ...">
-			<img class="logo-img" src="imgs/temtem_logo.png" alt="logo temtem">
-		</nav>
-
-		<nav class="navigation">
-
-			<div class="bgmenuSectionLiens">
-
-				<ul>
-                    <li>
-                        <a class="lienBarreMenu" href="index.php">Accueil</a>
-                    </li>
-					<li>
-						<a class="lienBarreMenu" href="php/platypet.php">Platypet</a>
-					</li>
-				</ul>
-			</div>
-
-		</nav>
-
-	</header>
+<?php
+    include "php/header.php";
+?>
 
     <div class="container">
 
@@ -62,7 +29,7 @@
                     <p>Platypet</p>
                 </div>
                 <div class="tempedie_espace_type1">
-                        <p class="type_eau">Eau</p>
+                        <p class="type_cristal">Cristal</p>
                 </div>
                 <div class="tempedie_espace_type2">
                     <p class="type_toxic">Toxic</p>
@@ -229,7 +196,6 @@
 	*/?>
 	</div>-->
 
-</body>
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-	<script src="../js/app.js"></script>
-</html>
+<?php
+    include "php/footer.php";
+?>

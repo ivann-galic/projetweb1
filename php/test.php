@@ -12,12 +12,12 @@
             <div class="fiche_espace_description">
                 <div class="numero">
                     <p>Numéro :</p>
-                    <p></p>
+                    <p>3</p>
                 </div>
                 <div class="espace_nom_cri">
                     <div class="nom">
                         <p>Nom :</p>
-                        <p></p>
+                        <p>Platypet</p>
                     </div>
                     <div class="cri">
                         <p>Cri</p>
@@ -26,15 +26,15 @@
                 </div>
 
                 <div class="type">
-                    <p class="type_eau"></p>
-                    <p class="type_toxic"></p>
+                    <p class="type_eau">Eau</p>
+                    <p class="type_toxic">Toxic</p>
                 </div>
 
                 <div class="trait">
                     <p>Traits :</p>
                     <div class="liste_traits">
-                        <p></p>
-                        <p></p>
+                        <p>Virulent</p>
+                        <p>Amphibie</p>
                     </div>
 
                 </div>
@@ -51,13 +51,13 @@
             </div>
 
             <div class="fiche_espace_stats2">
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>55</p>
+                <p>39</p>
+                <p>65</p>
+                <p>45</p>
+                <p>31</p>
+                <p>67</p>
+                <p>56</p>
             </div>
         </div>
 
@@ -102,39 +102,79 @@
         <div class="attaque">
             <div class="attaque_caracteristiques">
                 <div class="obtention">
-                    <p></p>
+                    <p>Niveau</p>
                 </div>
                 <div class="niveau">
-                    <p></p>
+                    <p>1</p>
                 </div>
                 <div class="nom_attaque">
-                    <p></p>
+                    <p>Claque-nageoire</p>
                 </div>
                 <div class="type_attaque">
-                    <p></p>
+                    <p>Neutre</p>
                 </div>
                 <div class="categorie">
-                    <p></p>
+                    <p>Phys</p>
                 </div>
                 <div class="puissance">
-                    <p></p>
+                    <p>32</p>
                 </div>
                 <div class="endurance">
-                    <p></p>
+                    <p>4</p>
                 </div>
                 <div class="priorité">
-                    <p></p>
+                    <p>3</p>
                 </div>
                 <div class="chargement">
-                    <p></p>
+                    <p>0</p>
                 </div>
                 <div class="synergie">
-                    <p></p>
+                    <p>Vent</p>
                 </div>
             </div>
             <div class="attaque_description">
                 <div class="description">
-                    <p></p>
+                    <p>La capacité Claque-nageoire cible un seul Temtem. La cible peut être tous les Temtem sur le terrain, sauf le lanceur de la capacité.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="attaque">
+            <div class="attaque_caracteristiques">
+                <div class="obtention">
+                    <p>Niveau</p>
+                </div>
+                <div class="niveau">
+                    <p>1</p>
+                </div>
+                <div class="nom_attaque">
+                    <p>Claque-nageoire</p>
+                </div>
+                <div class="type_attaque">
+                    <p>Neutre</p>
+                </div>
+                <div class="categorie">
+                    <p>Phys</p>
+                </div>
+                <div class="puissance">
+                    <p>32</p>
+                </div>
+                <div class="endurance">
+                    <p>4</p>
+                </div>
+                <div class="priorité">
+                    <p>3</p>
+                </div>
+                <div class="chargement">
+                    <p>0</p>
+                </div>
+                <div class="synergie">
+                    <p>Vent</p>
+                </div>
+            </div>
+            <div class="attaque_description">
+                <div class="description">
+                    <p>La capacité Claque-nageoire cible un seul Temtem. La cible peut être tous les Temtem sur le terrain, sauf le lanceur de la capacité.</p>
                 </div>
             </div>
         </div>
