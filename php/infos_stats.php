@@ -24,7 +24,7 @@
                     </div>
                     <div class="cri">
                         <p>Cri</p>
-                        <audio controls="controls">
+                        <audio class="lecteur" controls="controls">
                             <source src="../src/cris/<?php echo $donnees['nom']; ?>.mp3" type="audio/mp3" />
                             Votre navigateur n'est pas compatible
                         </audio>
@@ -132,7 +132,7 @@
                 <p>' . $donnees['nom_capacite'] . '</p>
             </div>
             <div class="type_attaque">
-                    <p>' . $donnees['type'] . '</p>
+            <img class="icone_type" src="../imgs/type_sprites/'.$donnees['type'].'.png" alt="Platypet">
                 </div>
                 <div class="categorie">
                     <p>' . $donnees['categorie'] . '</p>

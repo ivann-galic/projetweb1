@@ -427,6 +427,14 @@ nav
 	font-size: 18px;
 }
 
+.icone_type {
+	height: 40px;
+}
+
+.lecteur{
+	outline: none;
+}
+
 .attaque_description {
 	height: 60px;
 	width: 1350px;
