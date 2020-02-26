@@ -8,20 +8,23 @@
 
         <div class="card">
             <div class="fiche_espace_image">
-                <img src="../imgs/temtem_sprites/<?php echo $donnees['nom']; ?>.png" alt="Platypet">
+                <img src="../imgs/temtem_sprites/<?php echo $donnees['nom']; ?>.gif" alt="Platypet">
             </div>
 
             <div class="fiche_espace_description">
-                <div class="numero">
+                <div class="espace_numero_nom">
+                    <div class="numero">
                     <p>Numéro :</p>
                     <p><?php echo $donnees['numero']; ?></p>
                 </div>
+                <div class="nom">
+                    <p>Nom :</p>
+                    <p><?php echo $donnees['nom']; ?></p>
+                </div>
+                </div>
+
 
                 <div class="espace_nom_cri">
-                    <div class="nom">
-                        <p>Nom :</p>
-                        <p><?php echo $donnees['nom']; ?></p>
-                    </div>
                     <div class="cri">
                         <p>Cri</p>
                         <audio class="lecteur" controls="controls">

@@ -201,9 +201,8 @@ nav
 	flex-direction: row;
 	align-items: center;
 	height: 70px;
-	width: 500px;
+	width: 200px;
 	font-size: 20px;
-	margin-top: 10px;
 	letter-spacing: 1px;
 }
 
@@ -224,6 +223,13 @@ nav
 	width: 500px;
 }
 
+.espace_numero_nom {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 500px;
+}
+
 .nom {
 	display: flex;
 	flex-direction: row;
@@ -232,15 +238,20 @@ nav
 	width: 250px;
 	font-size: 20px;
 	letter-spacing: 1px;
+
 }
 
 .nom p:first-child {
 	margin-left: 30px;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .nom p:nth-child(2) {
 	margin-left: 15px;
 	font-weight: 600;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .cri {
@@ -266,6 +277,7 @@ nav
 	width: 500px;
 	font-size: 20px;
 	letter-spacing: 1px;
+	font-weight: 600;
 }
 
 .type p:first-child {
