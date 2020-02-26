@@ -160,7 +160,7 @@ nav
 .card {
 	display: flex;
 	flex-direction: row;
-	width: 1600px;
+	width: 1350px;
 	height: 360px;
 	background-color: white;
 	border-radius: 5px;
@@ -335,23 +335,22 @@ nav
 }
 
 .banniere_capacités img {
-	height: 100px;
+	height: 90px;
 }
 
 .titres_attaques {
 	height: 80px;
-	width: 1600px;
+	width: 1350px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	font-family: "Roboto", sans-serif;
-	letter-spacing: 1px;
 	background-color: #e2eeee;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-	margin-top: 30px;
+	margin-top: 15px;
 	font-weight: 600;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .titre_obtention, .obtention {
@@ -406,38 +405,36 @@ nav
 
 .attaque {
 	display: block;
-	width: 1600px;
+	width: 1350px;
 	height: auto;
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 	font-family: "Roboto", sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	margin-top: 40px;
 	font-weight: 600;
 }
 
 .attaque_caracteristiques {
 	height: 80px;
-	width: 1600px;
+	width: 1350px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	font-family: "Roboto", sans-serif;
-	letter-spacing: 1px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .attaque_description {
 	height: 60px;
-	width: 1600px;
+	width: 1350px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
 	font-family: "Roboto", sans-serif;
-	letter-spacing: 1px;
 	font-size: 20px;
 	margin-bottom: 10px;
 }
@@ -446,6 +443,8 @@ nav
 	text-align: center;
 	font-weight: 500;
 	color: #373737;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 footer {

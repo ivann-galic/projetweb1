@@ -67,7 +67,7 @@
 
         <div class="titres_attaques">
             <div class="titre_obtention">
-                <p>Obtention</p>
+                <p>Méthode</p>
             </div>
             <div class="titre_niveau">
                 <p>Niveau</p>

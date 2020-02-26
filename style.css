@@ -100,7 +100,7 @@ nav
 	left: 0;
 	z-index: 800;
 	background-color: #fcc368;
-	width: 300px;
+	width: 270px;
 	height: 100%;
 	transition: transform .6s ease-in-out;
 	-webkit-transition: transform .6s ease-in-out;
@@ -156,7 +156,7 @@ nav
 }
 
 .banniere_liste img {
-	height: 110px;
+	height: 100px;
 }
 
 .container {
