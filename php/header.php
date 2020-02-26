@@ -27,7 +27,8 @@
                     </li>
                     <li>
                         <a class="lienBarreMenu" href="../php/platypet.php">Platypet</a>
-                    </li>
+					</li>
+					
                     <li>
                         <a class="lienBarreMenu" href="../php/test.php">Test</a>
                     </li>

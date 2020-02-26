@@ -9,7 +9,7 @@
 
         <div class="card">
             <div class="fiche_espace_image">
-                <img src="../imgs/temtem_sprites/Platypet.png" alt="Platypet">
+                <img src="../imgs/temtem_sprites/<?php echo $donnees['nom']; ?>.png" alt="Platypet">
             </div>
 
             <div class="fiche_espace_description">
@@ -30,8 +30,8 @@
                 </div>
 
                 <div class="type">
-                    <p class="type_<?php $donnees['type_1']; ?>"><?php echo $donnees['type_1']; ?></p>
-                    <p class="type_toxic"><?php echo $donnees['type_2']; ?></p>
+                    <p class="type_<?php echo $donnees['type_1']; ?>"><?php echo $donnees['type_1']; ?></p>
+                    <p class="type_<?php echo $donnees['type_2']; ?>"><?php echo $donnees['type_2']; ?></p>
                 </div>
 
                 <div class="trait">

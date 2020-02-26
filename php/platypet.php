@@ -14,6 +14,7 @@
 		        die('Erreur : '.$e->getMessage());
 		}
     $reponse = $bdd->query('SELECT * FROM tempedie WHERE nom = \'Platypet\'');
+    $stats = $bdd->query('SELECT * FROM stats WHERE nom = \'Platypet\'');
 ?>
 
 <?php
