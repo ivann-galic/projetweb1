@@ -32,7 +32,7 @@
 <?php
         while ($donnees = $tempedie->fetch()) {   
 			echo '
-		        <div class="card">
+		        <div class="card" onclick="document.location=\'php/'.$donnees['nom'].'.php\'">
 		                <div class="tempedie_espace_numero">
 		                    <p># ' . $donnees['numero'] . '</p>
 		                </div>
