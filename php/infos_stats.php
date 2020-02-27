@@ -135,10 +135,10 @@
                 <p>' . $donnees['nom_capacite'] . '</p>
             </div>
             <div class="type_attaque">
-            <img class="icone_type" src="../imgs/type_sprites/'.$donnees['type'].'.png" alt="Platypet">
+            <img class="icone_type" src="../imgs/type_sprites/'.$donnees['type'].'.png" title="'.$donnees['type'].'" >
                 </div>
                 <div class="categorie">
-                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['categorie'].'.png" alt="Platypet">
+                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['categorie'].'.png" title="'.$donnees['categorie'].'" >
                 </div>
                 <div class="puissance">
                     <p>' . $donnees['puissance'] . '</p>
@@ -147,13 +147,13 @@
                     <p>' . $donnees['endurance'] . '</p>
                 </div>
                 <div class="priorité">
-                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['priorite'].'.png" alt="Platypet">
+                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['priorite'].'.png" title="'.$donnees['priorite'].'">
                 </div>
                 <div class="chargement">
                     <p>' . $donnees['attente'] . '</p>
                 </div>
                 <div class="synergie">
-                    <p>' . $donnees['synergie'] . '</p>
+                <img class="icone_type" src="../imgs/type_sprites/'.$donnees['synergie'].'.png" title="'.$donnees['synergie'].'" >
                 </div>
             </div>
             <div class="attaque_description">

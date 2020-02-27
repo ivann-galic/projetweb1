@@ -8,9 +8,9 @@
         </div>
         <div class="form">
             <form class="register-form">
-                <input type="text" placeholder="name"/>
-                <input type="password" placeholder="password"/>
-                <input type="text" placeholder="email address"/>
+                <input type="text" placeholder="Identifiant"/>
+                <input type="password" placeholder="Mot de Passe"/>
+                <input type="text" placeholder="Adresse mail"/>
                 <button>S'inscire</button>
                 <p class="message">Déjà inscrit ? <a href="#">Se connecter</a></p>
             </form>
