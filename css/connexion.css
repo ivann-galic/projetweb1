@@ -433,7 +433,7 @@ nav
 }
 
 .espace-profil {
-	width: 30%;
+	width: 55%;
 	height: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -467,7 +467,7 @@ nav
 
 .profil-titres {
 	width: 30%;
-	padding-left: 50px;
+	padding-left: 140px;
 }
 
 .profil-titres p {
