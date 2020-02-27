@@ -1,5 +1,5 @@
 <?php
-    include "php/header_tempedie.php";
+    include "header_tempedie.php";
     try
 		{
 			// On se connecte à MySQL

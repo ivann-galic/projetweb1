@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
+	<script src="../js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/tempedie.css"/>
 	<script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
 	<title>Accueil</title>
@@ -14,7 +15,7 @@
 		<nav class="barreMenu">
 			<p class="btn-navigation"><i class="fas fa-bars"></i></p>
 			<input type="search" class="search" name="search" placeholder="Rechercher un Temtem, une capacité ...">
-			<a href="../php/index.php"><img class="logo-img" src="../imgs/temtem_logo.png" alt="logo temtem"></a>
+			<a href="index.php"><img class="logo-img" src="../imgs/temtem_logo.png" alt="logo temtem"></a>
             <a href="../php/connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>
 		</nav>
 
@@ -30,10 +31,7 @@
                         <a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>
                     </li>
                     <li>
-                        <a class="lienBarreMenu" href="../php/apropos.php">A propos</a>
-                    </li>
-                    <li>
-                        <a class="lienBarreMenu" href="../php/tempedie.php">tempedie</a>
+                        <a class="lienBarreMenu" href="../php/aPropos.php">A propos</a>
                     </li>
 				</ul>
 			</div>
