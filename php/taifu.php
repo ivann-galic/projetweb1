@@ -13,8 +13,9 @@
 			// En cas d'erreur, on affiche un message et on arrête tout
 		        die('Erreur : '.$e->getMessage());
 		}
-    $reponse = $bdd->query('SELECT * FROM tempedie WHERE nom = \'Taifu\'');
-    $stats = $bdd->query('SELECT * FROM stats WHERE nom = \'Taifu\'');
+		$tempedie = $bdd->query('SELECT * FROM tempedie WHERE nom = \'Taifu\'');
+		$stats = $bdd->query('SELECT * FROM stats WHERE nom = \'Taifu\'');
+		$capacites_temtem = $bdd->query('SELECT * FROM capacites_temtem AS ct INNER JOIN capacites c ON ct.nom_capacite = c.nom WHERE ct.nom_temtem = \'Taifu\'');
 ?>
 
 <?php
