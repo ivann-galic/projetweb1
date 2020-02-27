@@ -1,5 +1,5 @@
 <?php
-    include "../php/header._fiche.php";
+    include "../php/header_fiche.php";
 ?>
 
 <?php

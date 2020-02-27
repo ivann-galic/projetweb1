@@ -23,17 +23,16 @@
     <div class="container">
 
         <div class="banniere_liste">
-            <img src="imgs/liste.png" alt="Liste des Temtem">
+            <img src="../imgs/liste.png" alt="Liste des Temtem">
+		</div>
+
+		<div class="espace-form">
+            <form class="formulaire-recherche" method="GET">
+                <input type="search" name="search" placeholder="Rechercher un temtem..." />
+                <input type="submit" value="Valider" />
+                <input type="submit" name="refresh" value="Rafraichir" />
+            </form>
         </div>
-
-
-        <form method="GET">
-   			<input type="search" name="search" placeholder="Recherche..." />
-   			<input type="submit" value="Valider" />
-		</form>
-		<form method="GET">
-			<input type="submit" name="refresh" value="Rafraichir" />
-		</form>
 
         <div class="card_titres">
 
@@ -49,12 +48,12 @@
 	if($tempedie->rowCount() > 0) {
         while ($donnees = $tempedie->fetch()) {   
 			echo '
-		        <div class="card" onclick="document.location=\'php/'.$donnees['nom'].'.php\'">
+		        <div class="card" onclick="document.location=\'../php/'.$donnees['nom'].'.php\'">
 		                <div class="tempedie_espace_numero">
 		                    <p># ' . $donnees['numero'] . '</p>
 		                </div>
 		                <div class="tempedie_espace_image">
-		                    <img src="imgs/temtem_sprites/'.$donnees['nom'].'.png" alt="Platypet">
+		                    <img src="../imgs/temtem_sprites/'.$donnees['nom'].'.png" alt="Platypet">
 		                </div>
 		                <div class="tempedie_espace_nom">
 		                    <p>' . $donnees['nom'] . '</p>
@@ -115,5 +114,5 @@
 	</div>-->
 
 <?php
-    include "php/footer.php";
+    include "../php/footer.php";
 ?>

@@ -27,6 +27,9 @@
                         <a class="lienBarreMenu" href="../index.php">Accueil</a>
                     </li>
                     <li>
+                        <a class="lienBarreMenu" href="../php/tempedie.php">Tempedie</a>
+                    </li>
+                    <li>
                         <a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>
                     </li>
                     <li>
