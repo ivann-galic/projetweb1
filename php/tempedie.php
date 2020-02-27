@@ -24,15 +24,16 @@
 
         <div class="banniere_liste">
             <img src="../imgs/liste.png" alt="Liste des Temtem">
-		</div>
+        </div>
 
-		<div class="espace-form">
+        <div class="espace-form">
             <form class="formulaire-recherche" method="GET">
                 <input type="search" name="search" placeholder="Rechercher un temtem..." />
                 <input type="submit" value="Valider" />
                 <input type="submit" name="refresh" value="Rafraichir" />
             </form>
         </div>
+
 
         <div class="card_titres">
 
