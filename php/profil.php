@@ -11,12 +11,6 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $requser->execute(array($getid));
    $userinfo = $requser->fetch();
 ?>
-<html>
-   <head>
-      <title>TUTO PHP</title>
-      <meta charset="utf-8">
-   </head>
-   <body>
       <div align="center">
          <h2>Profil de <?php echo $userinfo['nom']; ?></h2>
          <br /><br />
@@ -31,8 +25,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
          }
          ?>
       </div>
-   </body>
-</html>
+
 <?php   
 }
 ?>
