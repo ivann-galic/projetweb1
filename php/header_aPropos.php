@@ -13,7 +13,6 @@
 	<header>
 		<nav class="barreMenu">
 			<p class="btn-navigation"><i class="fas fa-bars"></i></p>
-			<input type="search" class="search" name="search" placeholder="Rechercher un Temtem, une capacité ...">
             <a href="../index.php"><img class="logo-img" src="../imgs/temtem_logo.png" alt="logo temtem"></a>
             <a href="../php/connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>
         </nav>
