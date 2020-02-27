@@ -22,11 +22,11 @@ session_start();
             <?php
                 if ($_SESSION['nom']){
                     echo '<a href="php/profil.php?id='.$_SESSION['id'].'"><button class="connexion_btn">Profil</button></a>
-                        <a href="../php/deconnexion.php"><button class="deconnexion_btn">Deconnexion</button></a>';
+                        <a href="deconnexion.php"><button class="deconnexion_btn">Deconnexion</button></a>';
 
                 }
                 else{
-                    echo '<a href="../php/connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>';
+                    echo '<a href="php/connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>';
                 }
 
             ?>
@@ -44,7 +44,14 @@ session_start();
                         <a class="lienBarreMenu" href="../php/tempedie.php">Tempedie</a>
                     </li>
                     <li>
-                        <a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>
+                        <?php 
+                            if ($_SESSION['nom']) {
+                                echo '<a class="lienBarreMenu" href="php/profil.php?id='.$_SESSION['id'].'">Profil</a>';
+                            }
+                            else{
+                                echo '<a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>';
+                            }
+                        ?>
                     </li>
                     <li>
                         <a class="lienBarreMenu" href="../php/apropos.php">A propos</a>
