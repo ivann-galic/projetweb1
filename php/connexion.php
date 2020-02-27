@@ -103,8 +103,8 @@ if(isset($_POST['formconnexion'])) {
       if($userexist == 1) {
          $userinfo = $requser->fetch();
          $_SESSION['id'] = $userinfo['id'];
-         $_SESSION['pseudo'] = $userinfo['pseudo'];
-         $_SESSION['mail'] = $userinfo['mail'];
+         $_SESSION['nom'] = $userinfo['nom'];
+         $_SESSION['email'] = $userinfo['email'];
          header("Location: profil.php?id=".$_SESSION['id']);
       } else {
          $erreur = "Mauvais mail ou mot de passe !";

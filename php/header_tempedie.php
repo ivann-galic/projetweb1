@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -14,7 +19,17 @@
 		<nav class="barreMenu">
 			<p class="btn-navigation"><i class="fas fa-bars"></i></p>
 			<a href="../index.php"><img class="logo-img" src="../imgs/temtem_logo.png" alt="logo temtem"></a>
-            <a href="../php/connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>
+            <?php
+                if ($_SESSION['nom']){
+                    echo '<a href="php/profil.php?id='.$_SESSION['id'].'"><button class="connexion_btn">Profil</button></a>
+                        <a href="deconnexion.php"><button class="deconnexion_btn">Deconnexion</button></a>';
+
+                }
+                else{
+                    echo '<a href="php/connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>';
+                }
+
+            ?>
 		</nav>
 
 		<nav class="navigation">
