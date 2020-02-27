@@ -21,12 +21,12 @@ session_start();
             <a href="../index.php"><img class="logo-img" src="../imgs/temtem_logo.png" alt="logo temtem"></a>
             <?php
                 if ($_SESSION['nom']){
-                    echo '<a href="php/profil.php?id='.$_SESSION['id'].'"><button class="connexion_btn">Profil</button></a>
-                        <a href="deconnexion.php"><button class="deconnexion_btn">Deconnexion</button></a>';
+                    echo '<a href="php/profil.php?id='.$_SESSION['id'].'"><button class="connexion_btn"><i class="fas fa-user"></i></button></a>
+                        <a href="deconnexion.php"><button class="deconnexion_btn"><i class="fas fa-power-off"></i></button></a>';
 
                 }
                 else{
-                    echo '<a href="connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>';
+                    echo '<a href="connexion.php"><button class="connexion_btn"><i class="fas fa-user"></i></button></a>';
                 }
 
             ?>

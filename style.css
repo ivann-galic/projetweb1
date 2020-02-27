@@ -82,9 +82,9 @@ nav
 .connexion_btn {
 	position: absolute;
 	top: 30px;
-	right: 195px;
+	right: 50px;
 	height: 50px;
-	width: 300px;
+	width: 50px;
 	margin: 0;
 	outline: 0;
 	color: white;
@@ -92,9 +92,29 @@ nav
 	letter-spacing: 1px;
 	font-weight: 600;
 	border: none;
-	background-color: #6d73a7;
+	background-color: #784d69;
 	border-radius: 8px;
 	cursor: pointer;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.deconnexion_btn {
+	position: absolute;
+	top: 30px;
+	right: 120px;
+	height: 50px;
+	width: 50px;
+	margin: 0;
+	outline: 0;
+	color: white;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	border: none;
+	background-color: #f9aa56;
+	border-radius: 8px;
+	cursor: pointer;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .search::placeholder{
