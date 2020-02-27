@@ -172,12 +172,12 @@ nav
 	margin-top: 40px;
 	margin-bottom: 20px;
 	height: 150px;
-	width: 1600px;
+	width: 1350px;
 	text-align: center;
 }
 
 .banniere_liste img {
-	height: 100px;
+	height: 80px;
 }
 
 .container {
@@ -192,7 +192,7 @@ nav
 .container p {
 	font-family: "Roboto", sans-serif;
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 35px;
 	letter-spacing: 1px;
 	color: #383a3a;
 }

@@ -190,7 +190,7 @@ nav
 .banniere_liste {
 	position: relative;
 	max-width: 500px;
-	margin: 150px auto 30px;
+	margin: 150px auto 10px;
 	padding: 45px;
 	text-align: center;
 }
