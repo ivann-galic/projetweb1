@@ -30,7 +30,10 @@
                         <a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>
                     </li>
                     <li>
-                        <a class="lienBarreMenu" href="../php/aPropos.php">A propos</a>
+                        <a class="lienBarreMenu" href="../php/apropos.php">A propos</a>
+                    </li>
+                    <li>
+                        <a class="lienBarreMenu" href="../php/home.php">Home</a>
                     </li>
 				</ul>
 			</div>
