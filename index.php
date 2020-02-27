@@ -1,99 +1,24 @@
 <?php
     include "php/header.php";
-    try
-		{
-			// On se connecte à MySQL
-			$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
-		}
-		catch(Exception $e)
-		{
-			// En cas d'erreur, on affiche un message et on arrête tout
-		        die('Erreur : '.$e->getMessage());
-		}
-
-    $tempedie = $bdd->query('SELECT * FROM tempedie');
 ?>
-    <div class="container">
 
-        <div class="banniere_liste">
-            <img src="imgs/liste.png" alt="Liste des Temtem">
+    <div class="first-container">
+        <div class="container-video">
+            <iframe width="590" height="347" src="https://www.youtube.com/embed/Csx5aK5mZCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-
-        <div class="card_titres">
-
-                <p>Numéro</p>
-                <p>Image</p>
-                <p>Nom</p>
-                <p>Type 1</p>
-                <p>Type 2</p>
-
+        <div class="container-texte">
+            <img src="../imgs/tableautxt.png" alt="Description du jeu">
         </div>
+    </div>
 
-<?php
-        while ($donnees = $tempedie->fetch()) {   
-			echo '
-		        <div class="card" onclick="document.location=\'php/'.$donnees['nom'].'.php\'">
-		                <div class="tempedie_espace_numero">
-		                    <p># ' . $donnees['numero'] . '</p>
-		                </div>
-		                <div class="tempedie_espace_image">
-		                    <img src="imgs/temtem_sprites/'.$donnees['nom'].'.png" alt="Platypet">
-		                </div>
-		                <div class="tempedie_espace_nom">
-		                    <p>' . $donnees['nom'] . '</p>
-		                </div>
-		                <div class="type_espace_type">
-		                        <p class="type_'.$donnees['type_1'].'">' .$donnees['type_1']. '</p>
-		                </div>
-		                <div class="type_espace_">
-		                        <p class="type_'.$donnees['type_2'].'">' . $donnees['type_2'] . '</p>
-		                </div>
-		        </div>
-	        ';
-        }
-        $tempedie->closeCursor();
-    ?>	
-        
-<!--	<div class="bdd">
-	<?php
-/*		try
-		{
-			// On se connecte à MySQL
-			$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
-		}
-		catch(Exception $e)
-		{
-			// En cas d'erreur, on affiche un message et on arrête tout
-		        die('Erreur : '.$e->getMessage());
-		}
-
-		// Si tout va bien, on peut continuer
-
-		// On récupère tout le contenu de la table jeux_video
-		$reponse = $bdd->query('SELECT * FROM tempedie');
-
-		// On affiche chaque entrée une à une
-		while ($donnees = $reponse->fetch())
-		{
-	*/?>
-		    <p> #
-		    	<strong>
-		    		<?php /*echo $donnees['numero']; */?>
-		    	</strong> 
-		    	: 
-		    	<?php /*echo $donnees['nom']; */?>
-		    	<br /> Type : <?php /*echo $donnees['type_1']; */?>
-		    	/ <?php /*echo $donnees['type_2']; */?>
-		     	<br />
-		    </p>
-		    
-	<?php
-/*		}
-
-		$reponse->closeCursor(); // Termine le traitement de la requête
-
-	*/?>
-	</div>-->
+    <div class="second-container">
+        <div class="container-steam">
+            <a href="https://store.steampowered.com/app/745920/Temtem/"><img src="../imgs/steam.png" alt="Lien vers Steam"></a>
+                </div>
+        <div class="container-tempedie">
+            <a href="php/tempedie.php"><img src="../imgs/tempedie.png" alt="Lien vers le Tempedie"></a>
+        </div>
+    </div>
 
 <?php
     include "php/footer.php";
