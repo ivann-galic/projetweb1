@@ -138,7 +138,7 @@
             <img class="icone_type" src="../imgs/type_sprites/'.$donnees['type'].'.png" alt="Platypet">
                 </div>
                 <div class="categorie">
-                    <p>' . $donnees['categorie'] . '</p>
+                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['categorie'].'.png" alt="Platypet">
                 </div>
                 <div class="puissance">
                     <p>' . $donnees['puissance'] . '</p>
@@ -147,7 +147,7 @@
                     <p>' . $donnees['endurance'] . '</p>
                 </div>
                 <div class="priorité">
-                    <p>' . $donnees['priorite'] . '</p>
+                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['priorite'].'.png" alt="Platypet">
                 </div>
                 <div class="chargement">
                     <p>' . $donnees['attente'] . '</p>
