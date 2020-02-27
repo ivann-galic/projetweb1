@@ -46,7 +46,7 @@ session_start();
                     <li>
                         <?php 
                             if ($_SESSION['nom']) {
-                                echo '<a class="lienBarreMenu" href="php/profil.php?id='.$_SESSION['id'].'">Profil</a>';
+                                echo '<a class="lienBarreMenu" href="profil.php?id='.$_SESSION['id'].'">Profil</a>';
                             }
                             else{
                                 echo '<a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>';
