@@ -4,6 +4,7 @@
 <?php
     $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
 
+
 if(isset($_POST['forminscription'])) {
    $pseudo = htmlspecialchars($_POST['pseudo']);
    $mail = htmlspecialchars($_POST['mail']);
@@ -43,6 +44,25 @@ if(isset($_POST['forminscription'])) {
    }
 }
 ?>
+
+    <div class="main-container">
+        <div class="espace-connexion">
+            <form method="POST" action="">
+                <input type="email" name="mailconnect" placeholder="Mail" />
+                <input type="password" name="mdpconnect" placeholder="Mot de passe" />
+                <input type="submit" name="formconnexion" value="Se connecter !" />
+            </form>
+            <?php
+            if(isset($erreur)) {
+                echo '<font color="red">'.$erreur."</font>";
+            }
+            ?>
+        </div>
+
+        <div class="espace-inscription">
+
+        </div>
+    </div>
 
 <div align="center">
     <h2>Inscription</h2>
@@ -130,7 +150,6 @@ if(isset($_POST['formconnexion'])) {
          }
          ?>
       </div>
-
 
 <!--
         <div class="banniere_liste">

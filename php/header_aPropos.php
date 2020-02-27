@@ -26,7 +26,7 @@ session_start();
 
                 }
                 else{
-                    echo '<a href="php/connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>';
+                    echo '<a href="connexion.php"><button class="connexion_btn">Connexion / inscription</button></a>';
                 }
 
             ?>
@@ -46,10 +46,10 @@ session_start();
                     <li>
                         <?php 
                             if ($_SESSION['nom']) {
-                                echo '<a class="lienBarreMenu" href="php/profil.php?id='.$_SESSION['id'].'">Profil</a>';
+                                echo '<a class="lienBarreMenu" href="profil.php?id='.$_SESSION['id'].'">Profil</a>';
                             }
                             else{
-                                echo '<a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>';
+                                echo '<a class="lienBarreMenu" href="connexion.php">Connexion</a>';
                             }
                         ?>
                     </li>
