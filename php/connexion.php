@@ -21,7 +21,7 @@
                    $mailexist = $reqmail->rowCount();
                    if($mailexist == 0) {
                       if($mdp == $mdp2) {
-                         $insertmbr = $bdd->prepare("INSERT INTO utilisateur(nom, email, mdp) VALUES(?, ?, ?)");
+                          $insertmbr = $bdd->prepare("INSERT INTO utilisateur(nom, email, mdp, date_inscription) VALUES(?, ?, ?, NOW())");
                          $insertmbr->execute(array($pseudo, $mail, $mdp));
                          $erreur2 = "Votre compte a bien été créé !";
                       } else {
@@ -60,6 +60,7 @@ if(isset($_POST['formconnexion'])) {
             $_SESSION['id'] = $userinfo['id'];
             $_SESSION['nom'] = $userinfo['nom'];
             $_SESSION['email'] = $userinfo['email'];
+            $_SESSION['date_inscription'] = $userinfo['date_inscription'];
             header("Location: profil.php?id=".$_SESSION['id']);
         } else {
             $erreur = "Mauvais mail ou mot de passe !";

@@ -13,10 +13,19 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
 ?>
     <div class="main-container">
         <div class="espace-profil">
-            <h2>Profil de <?php echo $userinfo['nom']; ?></h2>
-            <p >Pseudo: <?php echo $userinfo['nom']; ?></p>
-            <p >Mail: <?php echo $userinfo['email']; ?></p>
-            <p >Date d'inscription: <?php echo $userinfo['email']; ?></p>
+            <div class="titre-section-profil">
+                <h2>Profil de <?php echo $userinfo['nom']; ?></h2>
+            </div>
+            <div class="profil-titres">
+                <p>Pseudo :</p>
+                <p>Mail :</p>
+                <p>Date d'inscription :</p>
+            </div>
+            <div class="profil-infos">
+                <p><?php echo $userinfo['nom']; ?></p>
+                <p><?php echo $userinfo['email']; ?></p>
+                <p><?php echo $userinfo['date_inscription']; ?></p>
+            </div>
         </div>
     </div>
 

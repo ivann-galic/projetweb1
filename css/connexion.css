@@ -436,7 +436,7 @@ nav
 	width: 30%;
 	height: auto;
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	background-color: white;
 	font-family: "Roboto", sans-serif;
@@ -448,10 +448,34 @@ nav
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
-.espace-profil p  {
+.titre-section-profil {
+	width: 100%;
+	float: left;
+}
+.profil-infos p, .profil-titres p  {
 	font-weight: 500;
 	font-size: 17px;
 	padding-left: 70px;
 }
+
+.profil-infos, .profil-titres  {
+	float: left;
+}
+
+.profil-titres {
+	width: 30%;
+	padding-left: 50px;
+}
+
+.profil-titres p {
+	font-weight: 600;
+}
+
+.profil-infos{
+	width: 50%;
+}
+
+
