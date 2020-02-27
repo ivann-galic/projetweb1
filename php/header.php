@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8" />
-    <script src="../js/app.js"></script>
 	<link rel="stylesheet" type="text/css" href="../style.css"/>
 	<script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
 	<title>A propos</title>
