@@ -11,24 +11,20 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $requser->execute(array($getid));
    $userinfo = $requser->fetch();
 ?>
-      <div align="center">
-         <h2>Profil de <?php echo $userinfo['nom']; ?></h2>
-         <br /><br />
-         Pseudo = <?php echo $userinfo['nom']; ?>
-         <br />
-         Mail = <?php echo $userinfo['email']; ?>
-         <br />
-         <?php
-         if(isset($_SESSION['id']) AND $userinfo['id'] == $_SESSION['id']) {
-         ?>
-         <?php
-         }
-         ?>
-      </div>
+    <div class="main-container">
+        <div class="espace-profil">
+            <h2>Profil de <?php echo $userinfo['nom']; ?></h2>
+            <p >Pseudo: <?php echo $userinfo['nom']; ?></p>
+            <p >Mail: <?php echo $userinfo['email']; ?></p>
+            <p >Date d'inscription: <?php echo $userinfo['email']; ?></p>
+        </div>
+    </div>
 
 <?php   
 }
 ?>
+
+
 
 <?php
 include "../php/footer.php";

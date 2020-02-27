@@ -26,7 +26,7 @@ session_start();
 
                 }
                 else{
-                    echo '<a href="php/connexion.php"><button class="connexion_btn"><i class="fas fa-user"></i></button></a>';
+                    echo '<a href="connexion.php"><button class="connexion_btn"><i class="fas fa-user"></i></button></a>';
                 }
 
             ?>

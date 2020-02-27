@@ -431,3 +431,27 @@ nav
 	color: #1b1b1b;
 	margin-top: 90px;
 }
+
+.espace-profil {
+	width: 30%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	background-color: white;
+	font-family: "Roboto", sans-serif;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.espace-profil h2 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.espace-profil p  {
+	font-weight: 500;
+	font-size: 17px;
+	padding-left: 70px;
+}
