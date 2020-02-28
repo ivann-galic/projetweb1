@@ -1,15 +1,6 @@
 <?php
     include "header_tempedie.php";
-    try
-		{
-			// On se connecte à MySQL
-			$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
-		}
-		catch(Exception $e)
-		{
-			// En cas d'erreur, on affiche un message et on arrête tout
-		        die('Erreur : '.$e->getMessage());
-		}
+    include "bdd.php";
 
     $tempedie = $bdd->query('SELECT * FROM tempedie');
 	if(isset($_GET['search']) AND !empty($_GET['search'])) {

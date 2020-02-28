@@ -2,8 +2,8 @@
 session_start();
 
 include "../php/header_connexion.php";
+include "bdd.php";
 
-$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
 
 if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $getid = intval($_GET['id']);

@@ -1,8 +1,7 @@
 <?php
     include "../php/header_connexion.php";
-?>
-<?php
-    $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
+    include "bdd.php";
+
 
 
     if(isset($_POST['forminscription'])) {
