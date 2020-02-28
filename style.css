@@ -121,13 +121,11 @@ nav
 	color: #5B5B5B;
 }
 
-
 .logo-img {
 	margin-top: 6px;
 	height: 100px;
 	text-align: center;
 }
-
 
 /* *** BURGER MENU *** */
 
@@ -187,6 +185,8 @@ nav
 	background-color: #764a68;
 	color: white;
 }
+
+/* *** ------------- *** */
 
 .banniere_liste {
 	margin-top: 40px;
