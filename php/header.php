@@ -23,7 +23,7 @@ session_start();
             <?php
                 if ($_SESSION['nom']){
                     echo '<a href="php/profil.php?id='.$_SESSION['id'].'"><button class="connexion_btn"><i class="fas fa-user"></i></button></a>
-                        <a href="deconnexion.php"><button class="deconnexion_btn"><i class="fas fa-power-off"></i></button></a>';
+                        <a href="php/deconnexion.php"><button class="deconnexion_btn"><i class="fas fa-power-off"></i></button></a>';
 
                 }
                 else{

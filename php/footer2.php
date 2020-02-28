@@ -6,13 +6,13 @@
 	align-items: center; 
 	justify-content: center; 
 	font-size: 13px;
-	margin-top: auto;
+	position: absolute;
+	bottom: 0;
     height: 80px;
     width: 100%;
     background-color: #cfd8dc;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 	font-family: 'Roboto', sans-serif;
-clear:both
 	">
 
 

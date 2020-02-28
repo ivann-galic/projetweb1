@@ -63,47 +63,6 @@
     } else { ?>
 <p>Aucun résultat pour: <?= $search ?>...</p>
 <?php } ?>
-        
-<!--	<div class="bdd">
-	<?php
-/*		try
-		{
-			// On se connecte à MySQL
-			$bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', 'root');
-		}
-		catch(Exception $e)
-		{
-			// En cas d'erreur, on affiche un message et on arrête tout
-		        die('Erreur : '.$e->getMessage());
-		}
-
-		// Si tout va bien, on peut continuer
-
-		// On récupère tout le contenu de la table jeux_video
-		$reponse = $bdd->query('SELECT * FROM tempedie');
-
-		// On affiche chaque entrée une à une
-		while ($donnees = $reponse->fetch())
-		{
-	*/?>
-		    <p> #
-		    	<strong>
-		    		<?php /*echo $donnees['numero']; */?>
-		    	</strong> 
-		    	: 
-		    	<?php /*echo $donnees['nom']; */?>
-		    	<br /> Type : <?php /*echo $donnees['type_1']; */?>
-		    	/ <?php /*echo $donnees['type_2']; */?>
-		     	<br />
-		    </p>
-		    
-	<?php
-/*		}
-
-		$reponse->closeCursor(); // Termine le traitement de la requête
-
-	*/?>
-	</div>-->
 
 <?php
     include "../php/footer.php";
