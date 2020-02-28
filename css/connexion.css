@@ -453,29 +453,34 @@ nav
 
 .titre-section-profil {
 	width: 100%;
-	float: left;
+
 }
 .profil-infos p, .profil-titres p  {
 	font-weight: 500;
 	font-size: 17px;
-	padding-left: 70px;
+	padding-left: 10px;
 }
 
 .profil-infos, .profil-titres  {
-	float: left;
+	display: block;
+	height: 150px;
 }
 
 .profil-titres {
-	width: 30%;
-	padding-left: 140px;
+	margin-right: 35px;
 }
 
 .profil-titres p {
 	font-weight: 600;
 }
 
-.profil-infos{
-	width: 50%;
+.profil-espace-infos {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
 
