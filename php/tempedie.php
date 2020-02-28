@@ -65,5 +65,10 @@
 <?php } ?>
 
 <?php
-    include "../php/footer.php";
+    if($tempedie->rowCount() > 1){
+            include "../php/footer.php";
+
+    }else{
+    include "../php/footer2.php";
+    }     
 ?>
