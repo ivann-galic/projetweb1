@@ -14,7 +14,10 @@ session_start();
 </head>
 
 <body>
-
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
+<script src="../js/tempedie.js"></script>
 	<header>
 		<nav class="barreMenu">
 			<p class="btn-navigation"><i class="fas fa-bars"></i></p>

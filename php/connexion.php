@@ -106,5 +106,5 @@ if(isset($_POST['formconnexion'])) {
         
 
 <?php
-    include "../php/footer2.php";
+    include "../php/footer.php";
 ?>

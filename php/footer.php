@@ -1,4 +1,3 @@
-<div style="height: 60px;"></div>
 
 <footer style="
 	display: flex; 
@@ -6,13 +5,12 @@
 	align-items: center; 
 	justify-content: center; 
 	font-size: 13px;
-	margin-top: auto;
     height: 80px;
     width: 100%;
     background-color: #cfd8dc;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 	font-family: 'Roboto', sans-serif;
-clear:both
+	margin-top: 30px;
 	">
 
 
@@ -40,6 +38,5 @@ clear:both
 </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 <script src="../js/app.js"></script>
 </html>

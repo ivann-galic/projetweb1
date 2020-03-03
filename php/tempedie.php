@@ -1,16 +1,42 @@
 <?php
     include "header_tempedie.php";
     include "bdd.php";
+    include "search.php";
 
     $tempedie = $bdd->query('SELECT * FROM tempedie');
 	if(isset($_GET['search']) AND !empty($_GET['search'])) {
    		$search = htmlspecialchars($_GET['search']);
    		$tempedie = $bdd->query('SELECT * FROM tempedie WHERE nom LIKE "%'.$search.'%"');
    	}
-   	else if (isset($_GET['refresh'])) {
+   	if (isset($_GET['refresh'])) {
    		$tempedie = $bdd->query('SELECT * FROM tempedie');
    	}
+    if (isset($_GET['numASC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY numero ASC');
+    }
+    if (isset($_GET['numDESC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY numero DESC');
+    }
+    if (isset($_GET['nameASC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY nom ASC');
+    }
+    if (isset($_GET['nameDESC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY nom DESC');
+    }
+    if (isset($_GET['type1ASC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY type_1 ASC');
+    }
+    if (isset($_GET['type1DESC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY type_1 DESC');
+    }
+    if (isset($_GET['type2ASC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY type_2 ASC');
+    }
+    if (isset($_GET['type2DESC'])) {
+        $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY type_2 DESC');
+    }
 ?>
+
     <div class="container">
 
         <div class="banniere_liste">
@@ -19,22 +45,50 @@
 
         <div class="espace-form">
             <form class="formulaire-recherche" method="GET">
-                <input type="search" name="search" placeholder="Rechercher un temtem..." />
+                <input id="barre-recherche" class="recherche" type="text" name="search" placeholder="Rechercher un temtem..." />
                 <input type="submit" value="Valider" />
                 <input type="submit" name="refresh" value="Rafraichir" />
             </form>
         </div>
 
 
-        <div class="card_titres">
+    <div class="card_titres">
+        <form class="formulaire-filtre" method="GET">
+            <?php
+            if (isset($_GET['numASC'])) {
+                echo '<input type="submit" class="btn_filtre" name="numDESC" value="Numéro"/>';
+            }
+            else {
+                echo '<input type="submit" class="btn_filtre" name="numASC" value="Numéro"/>';
+            }
+            ?>
+            <input type="submit" class="btn_filtre" value="Image"/>
 
-                <p>Numéro</p>
-                <p>Image</p>
-                <p>Nom</p>
-                <p>Type 1</p>
-                <p>Type 2</p>
+            <?php
+            if (isset($_GET['nameASC'])) {
+                echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
+            }
+            else {
+                echo '<input type="submit" class="btn_filtre" name="nameASC" value="Nom"/>';
+            }
 
-        </div>
+            if (isset($_GET['type1ASC'])) {
+                echo '<input type="submit" class="btn_filtre" name="type1DESC" value="Type 1"/>';
+            }
+            else {
+                echo '<input type="submit" class="btn_filtre" name="type1ASC" value="Type 1"/>';
+            }
+
+            if (isset($_GET['type2ASC'])) {
+                echo '<input type="submit" class="btn_filtre" name="type2DESC" value="Type 2"/>';
+            }
+            else {
+                echo '<input type="submit" class="btn_filtre" name="type2ASC" value="Type 2"/>';
+            }
+
+            ?>
+        </form>
+    </div>
 
 <?php
 	if($tempedie->rowCount() > 0) {
@@ -67,10 +121,5 @@
 <?php } ?>
 
 <?php
-    if($tempedie->rowCount() > 1){
-            include "../php/footer.php";
-
-    }else{
-    include "../php/footer2.php";
-    }     
+    include "../php/footer.php";
 ?>
