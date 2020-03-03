@@ -214,21 +214,36 @@ nav
 	background-color: white;
 	border-radius: 5px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-	font-family: "Roboto", sans-serif;
-	font-size: 20px;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
 }
 
 .btn_filtre {
-	display: inline-block;
-	width: 250px;
-	height: 145px;
-	line-height: 100px;
-	font-weight: 600;
-	letter-spacing: 2px;
+	height: 50px;
+	width: 258px;
+	font-size: 20px;
 	margin: 0;
+	outline: 0;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	color: black;
+	cursor: pointer;
+}
+
+#btn_image {
+	height: 50px;
+	width: 258px;
+	font-size: 20px;
+	margin: 0;
+	outline: 0;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	color: black;
+	cursor: auto;
+	padding: 0;
 }
 
 .espace-form {
@@ -270,13 +285,7 @@ nav
     margin-right: 10px;
 }
 
-.formulaire-recherche input:nth-child(2):hover {
-	background-color: #764a68;
-	color:white;
-	transition: 1s;
-}
-
-.formulaire-recherche input:nth-child(3):hover {
+.btn-formulaire-recherche:hover {
 	background-color: #764a68;
 	color:white;
 	transition: 1s;

@@ -1,8 +1,8 @@
-console.log("kj,nhg");
 $(function(){
-    console.log("kj,dferfgerfg");
     $('.recherche').autocomplete({
         source:'search.php',
-        minLength:3
+        minLength:1
     });
 });
+
+$('#btn_image').prop('disabled', true);  //pour désactiver

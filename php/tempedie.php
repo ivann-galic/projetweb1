@@ -46,11 +46,10 @@
         <div class="espace-form">
             <form class="formulaire-recherche" method="GET">
                 <input id="barre-recherche" class="recherche" type="text" name="search" placeholder="Rechercher un temtem..." />
-                <input type="submit" value="Valider" />
-                <input type="submit" name="refresh" value="Rafraichir" />
+                <input class="btn-formulaire-recherche" type="submit" value="Valider" />
+                <input class="btn-formulaire-recherche" type="submit" name="refresh" value="Rafraichir" />
             </form>
         </div>
-
 
     <div class="card_titres">
         <form class="formulaire-filtre" method="GET">
@@ -58,12 +57,14 @@
             if (isset($_GET['numASC'])) {
                 echo '<input type="submit" class="btn_filtre" name="numDESC" value="Numéro"/>';
             }
-            else {
+            else if (isset($_GET['numDESC'])) {
                 echo '<input type="submit" class="btn_filtre" name="numASC" value="Numéro"/>';
             }
+            else {
+                echo '<input type="submit" class="btn_filtre" name="numDESC" value="Numéro"/>';
+            }
             ?>
-            <input type="submit" class="btn_filtre" value="Image"/>
-
+            <input type="submit" id="btn_image" value="Image" onclick="disabled=true" />
             <?php
             if (isset($_GET['nameASC'])) {
                 echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
