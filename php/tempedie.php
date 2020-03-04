@@ -1,5 +1,5 @@
 <?php
-    include "header_tempedie.php";
+    include "header.php";
     include "bdd.php";
     include "search.php";
 
@@ -36,7 +36,6 @@
         $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY type_2 DESC');
     }
 ?>
-
     <div class="container">
 
         <div class="banniere_liste">

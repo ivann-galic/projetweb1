@@ -1,5 +1,5 @@
 <?php
-    include "../php/header_fiche.php";
+    include "header.php";
     include "bdd.php";
 
 		$tempedie = $bdd->query('SELECT * FROM tempedie WHERE nom = \'' . $_GET['nom'] . '\';');

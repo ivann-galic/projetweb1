@@ -4,20 +4,20 @@
         {
     ?>
 
-    <div class="container">
+    <div class="container-fiche">
 
-        <div class="card">
+        <div class="card-fiche">
             <div class="fiche_espace_image">
                 <img src="../imgs/temtem_sprites/<?php echo $donnees['nom']; ?>.gif" alt="Platypet">
             </div>
 
             <div class="fiche_espace_description">
                 <div class="espace_numero_nom">
-                    <div class="numero">
+                    <div class="numero-fiche">
                     <p>Numéro :</p>
                     <p><?php echo $donnees['numero']; ?></p>
                 </div>
-                <div class="nom">
+                <div class="nom-fiche">
                     <p>Nom :</p>
                     <p><?php echo $donnees['nom']; ?></p>
                 </div>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
 
-                <div class="type">
+                <div class="type-fiche">
                     <p class="type_<?php echo $donnees['type_1']; ?>"><?php echo $donnees['type_1']; ?></p>
                     <p class="type_<?php echo $donnees['type_2']; ?>"><?php echo $donnees['type_2']; ?></p>
                 </div>

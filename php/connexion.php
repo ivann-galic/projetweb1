@@ -1,5 +1,5 @@
 <?php
-    include "../php/header_connexion.php";
+    include "header.php";
     include "bdd.php";
 
 

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include "../php/header_connexion.php";
+include "../php/header.php";
 include "bdd.php";
 
 
