@@ -1,7 +1,6 @@
 <?php
     include "header.php";
     include "bdd.php";
-    include "search.php";
 
     $tempedie = $bdd->query('SELECT * FROM tempedie');
 	if(isset($_GET['search']) AND !empty($_GET['search'])) {
@@ -50,75 +49,74 @@
             </form>
         </div>
 
-    <div class="card_titres">
-        <form class="formulaire-filtre" method="GET">
-            <?php
-            if (isset($_GET['numASC'])) {
-                echo '<input type="submit" class="btn_filtre" name="numDESC" value="Numéro"/>';
-            }
-            else if (isset($_GET['numDESC'])) {
-                echo '<input type="submit" class="btn_filtre" name="numASC" value="Numéro"/>';
-            }
-            else {
-                echo '<input type="submit" class="btn_filtre" name="numDESC" value="Numéro"/>';
-            }
-            ?>
-            <input type="submit" id="btn_image" value="Image" onclick="disabled=true" />
-            <?php
-            if (isset($_GET['nameASC'])) {
-                echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
-            }
-            else {
-                echo '<input type="submit" class="btn_filtre" name="nameASC" value="Nom"/>';
-            }
+        <div class="card_titres">
+            <form class="formulaire-filtre" method="GET">
+                <?php
+                if (isset($_GET['numASC'])) {
+                    echo '<input type="submit" class="btn_filtre" name="numDESC" value="Numéro"/>';
+                }
+                else if (isset($_GET['numDESC'])) {
+                    echo '<input type="submit" class="btn_filtre" name="numASC" value="Numéro"/>';
+                }
+                else {
+                    echo '<input type="submit" class="btn_filtre" name="numDESC" value="Numéro"/>';
+                }
+                ?>
+                <input type="submit" id="btn_image" value="Image" onclick="disabled=true" />
+                <?php
+                if (isset($_GET['nameASC'])) {
+                    echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
+                }
+                else {
+                    echo '<input type="submit" class="btn_filtre" name="nameASC" value="Nom"/>';
+                }
 
-            if (isset($_GET['type1ASC'])) {
-                echo '<input type="submit" class="btn_filtre" name="type1DESC" value="Type 1"/>';
-            }
-            else {
-                echo '<input type="submit" class="btn_filtre" name="type1ASC" value="Type 1"/>';
-            }
+                if (isset($_GET['type1ASC'])) {
+                    echo '<input type="submit" class="btn_filtre" name="type1DESC" value="Type 1"/>';
+                }
+                else {
+                    echo '<input type="submit" class="btn_filtre" name="type1ASC" value="Type 1"/>';
+                }
 
-            if (isset($_GET['type2ASC'])) {
-                echo '<input type="submit" class="btn_filtre" name="type2DESC" value="Type 2"/>';
-            }
-            else {
-                echo '<input type="submit" class="btn_filtre" name="type2ASC" value="Type 2"/>';
-            }
+                if (isset($_GET['type2ASC'])) {
+                    echo '<input type="submit" class="btn_filtre" name="type2DESC" value="Type 2"/>';
+                }
+                else {
+                    echo '<input type="submit" class="btn_filtre" name="type2ASC" value="Type 2"/>';
+                }
 
-            ?>
-        </form>
-    </div>
+                ?>
+            </form>
+        </div>
 
-<?php
-	if($tempedie->rowCount() > 0) {
-        while ($donnees = $tempedie->fetch()) {
-            ?>
-			
-		        <div class="card" onclick="document.location='../php/itemtem.php?nom=<?php echo $donnees['nom'] ?>'">
-		                <div class="tempedie_espace_numero">
-		                    <p>#<?php echo $donnees['numero'] ?> </p>
-		                </div>
-		                <div class="tempedie_espace_image">
-		                    <img src="../imgs/temtem_sprites/<?php echo $donnees['nom'] ?>.png" alt="<?php echo $donnees['nom'] ?>">
-		                </div>
-		                <div class="tempedie_espace_nom">
-		                    <p><?php echo $donnees['nom'] ?></p>
-		                </div>
-		                <div class="type_espace_type">
-		                        <p class="type_<?php echo $donnees['type_1'] ?>"><?php echo $donnees['type_1'] ?></p>
-		                </div>
-		                <div class="type_espace_">
-		                        <p class="type_<?php echo $donnees['type_2'] ?>"><?php echo $donnees['type_2'] ?></p>
-		                </div>
-		        </div>
-	    <?php  
-        }
-        
-        $tempedie->closeCursor();
-    } else { ?>
-<p>Aucun résultat pour: <?= $search ?>...</p>
-<?php } ?>
+        <?php
+            if($tempedie->rowCount() > 0) {
+                while ($donnees = $tempedie->fetch()) {
+                    ?>
+                        <div class="card" onclick="document.location='../php/itemtem.php?nom=<?php echo $donnees['nom'] ?>'">
+                                <div class="tempedie_espace_numero">
+                                    <p>#<?php echo $donnees['numero'] ?> </p>
+                                </div>
+                                <div class="tempedie_espace_image">
+                                    <img src="../imgs/temtem_sprites/<?php echo $donnees['nom'] ?>.png" alt="<?php echo $donnees['nom'] ?>">
+                                </div>
+                                <div class="tempedie_espace_nom">
+                                    <p><?php echo $donnees['nom'] ?></p>
+                                </div>
+                                <div class="type_espace_type">
+                                        <p class="type_<?php echo $donnees['type_1'] ?>"><?php echo $donnees['type_1'] ?></p>
+                                </div>
+                                <div class="type_espace_">
+                                        <p class="type_<?php echo $donnees['type_2'] ?>"><?php echo $donnees['type_2'] ?></p>
+                                </div>
+                        </div>
+                <?php
+                }
+                $tempedie->closeCursor();
+            ?> <?php } else { ?>
+                <p>Aucun résultat pour: <?= $search ?>...</p>
+                </div>
+        <?php } ?>
 
 <?php
     include "../php/footer.php";

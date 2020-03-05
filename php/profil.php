@@ -11,7 +11,7 @@ if(isset($_GET['id']) AND $_GET['id'] > 0) {
    $requser->execute(array($getid));
    $userinfo = $requser->fetch();
 ?>
-    <div class="main-container">
+    <div class="container-profil">
         <div class="espace-profil">
             <div class="titre-section-profil">
                 <h2>Profil de <?php echo $userinfo['nom']; ?></h2>

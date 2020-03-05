@@ -9,6 +9,8 @@ session_start();
 
 <head>
     <meta charset="utf-8" />
+
+    <link rel="stylesheet"  href="../css/bootstrap.min.css"/>
     <link rel="stylesheet"  href="../style.css"/>
     <script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
     <title>Tempedie</title>

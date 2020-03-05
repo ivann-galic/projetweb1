@@ -1,6 +1,6 @@
 $(function(){
     $('.recherche').autocomplete({
-        source:'search.php',
+        source:'search-tempedie.php',
         minLength:1
     });
 });
