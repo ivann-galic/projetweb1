@@ -4,7 +4,7 @@
 
 		$tempedie = $bdd->query('SELECT * FROM tempedie WHERE nom = \'' . $_GET['nom'] . '\';');
 		$stats = $bdd->query('SELECT * FROM stats WHERE nom = \'' . $_GET['nom'] . '\';');
-		$capacites_temtem = $bdd->query('SELECT * FROM capacites_temtem AS ct INNER JOIN capacites c ON ct.nom_capacite = c.nom WHERE ct.nom_temtem = \'' . $_GET['nom'] . '\';');
+		$capacites_temtem = $bdd->query('SELECT * FROM capacites_temtem AS ct INNER JOIN capacites c ON ct.nom_capacite = c.nom WHERE ct.nom_temtem = \'' . $_GET['nom'] . '\'ORDER BY niveau, methode; ');
 ?>
 
 <?php
