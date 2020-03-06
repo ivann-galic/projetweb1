@@ -2,7 +2,62 @@
     include "header_bootstrap.php";
     include "bdd.php";
 
-    $attaque = $bdd->query('SELECT * FROM capacites');
+    $attaque = $bdd->query('SELECT * FROM capacites ORDER BY nom');
+    if(isset($_GET['search']) AND !empty($_GET['search'])) {
+        $search = htmlspecialchars($_GET['search']);
+        $attaque = $bdd->query('SELECT * FROM capacites WHERE nom LIKE "%'.$search.'%" ORDER BY nom');
+    }
+    if (isset($_GET['refresh'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY nom');
+    }
+    if (isset($_GET['puissanceASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY puissance ASC');
+    }
+    if (isset($_GET['puissanceDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY puissance DESC');
+    }
+    if (isset($_GET['nameASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY nom ASC');
+    }
+    if (isset($_GET['nameDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY nom DESC');
+    }
+    if (isset($_GET['typeASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY type ASC');
+    }
+    if (isset($_GET['typeDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY type DESC');
+    }
+    if (isset($_GET['categorieASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY categorie ASC');
+    }
+    if (isset($_GET['categorieDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY categorie DESC');
+    }
+    if (isset($_GET['enduranceASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY endurance ASC');
+    }
+    if (isset($_GET['enduranceDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY endurance DESC');
+    }
+    if (isset($_GET['prioriteASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY priorite ASC');
+    }
+    if (isset($_GET['prioriteDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY priorite DESC');
+    }
+    if (isset($_GET['chargementASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY attente ASC');
+    }
+    if (isset($_GET['chargementDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY attente DESC');
+    }
+    if (isset($_GET['synergieASC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY synergie ASC');
+    }
+    if (isset($_GET['synergieDESC'])) {
+        $attaque = $bdd->query('SELECT * FROM capacites ORDER BY synergie DESC');
+    }
 ?>
 
 <div class="container container-attaques">
@@ -21,62 +76,138 @@
         </div>
 
             <div class="row col-12 text-center carte-titres-attaques">
-                <div class="col-2">
-                    <p>Nom</p>
+                <form class="formulaire-filtre" method="GET">
+                <div class="col-2 d-inline">
+                    <?php
+                        if (isset($_GET['nameASC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
+                        }
+                        else if (isset($_GET['nameDESC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="nameASC" value="Nom"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
+                        }
+                    ?>
                 </div>
-                <div class="col">
-                    <p>Type</p>
+                <div class="col d-inline">
+                    <?php
+                        if (isset($_GET['typeASC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="typeDESC" value="Type"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="typeASC" value="Type"/>';
+                        }
+                    ?>
                 </div>
-                <div class="col">
-                    <p>Catégorie</p>
+                <div class="col d-inline">
+                    <?php
+                        if (isset($_GET['categorieASC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="categorieDESC" value="Catégorie"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="categorieASC" value="Catégorie"/>';
+                        }
+                    ?>
                 </div>
-                <div class="col ">
-                    <p>Puissance</p>
+                <div class="col d-inline">
+                    <?php
+                        if (isset($_GET['puissanceDESC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="puissanceASC" value="Puissance"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="puissanceDESC" value="Puissance"/>';
+                        }
+                    ?>
                 </div>
-                <div class="col ">
-                    <p>Endurance</p>
+                <div class="col d-inline">
+                    <?php
+                        if (isset($_GET['enduranceASC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="enduranceDESC" value="Endurance"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="enduranceASC" value="Endurance"/>';
+                        }
+                    ?>
                 </div>
-                <div class="col ">
-                    <p>Priorité</p>
+                <div class="col d-inline">
+                    <?php
+                        if (isset($_GET['prioriteASC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="prioriteDESC" value="Priorité"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="prioriteASC" value="Priorité"/>';
+                        }
+                    ?>
                 </div>
-                <div class="col ">
-                    <p>Chargement</p>
+                <div class="col d-inline">
+                    <?php
+                        if (isset($_GET['attenteASC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="attenteDESC" value="Attente"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="attenteASC" value="Attente"/>';
+                        }
+                    ?>
                 </div>
-                <div class="col ">
-                    <p>Synergie</p>
+                <div class="col d-inline">
+                    <?php
+                        if (isset($_GET['synergieASC'])) {
+                            echo '<input type="submit" class="btn_filtre" name="synergieDESC" value="Synergie"/>';
+                        }
+                        else {
+                            echo '<input type="submit" class="btn_filtre" name="synergieASC" value="Synergie"/>';
+                        }
+                    ?>
                 </div>
+            </form>
             </div>
 
     <?php
     if($attaque->rowCount() > 0) {
         while ($donnees = $attaque->fetch()) {
-            echo '
+            ?>
             <div class="row col-12 align-items-center text-center carte-attaque">
                 <div class="col-2 attaque-nom">
-                    <p>' . $donnees['nom'] . '</p>
+                    <p><?php echo $donnees['nom'] ?> </p>
                 </div>
                 <div class="col attaque-type">
-                    <img class="icone_type" src="../imgs/type_sprites/'.$donnees['type'].'.png" title="'.$donnees['type'].'" >
+                    <img class="icone_type" src="../imgs/type_sprites/<?php echo $donnees['type'] ?>.png" title="<?php echo $donnees['type'] ?>" >
                 </div>
                 <div class="col attaque-categorie">
-                    <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['categorie'].'.png" title="'.$donnees['categorie'].'" >
+                    <img class="icone_type" src="../imgs/icon_atk_sprites/<?php echo $donnees['categorie'] ?>.png" title="'<?php echo $donnees['categorie'] ?>'" >
                 </div>
                 <div class="col attaque-puissance">
-                    <p>' . $donnees['puissance'] . '</p>
+                    <p><?php 
+                        if ($donnees['puissance'] == 0) {
+                            echo '-';
+                        }
+                        else{
+                            echo $donnees['puissance'] ;
+                        }?>         
+                    </p>
                 </div>
                 <div class="col attaque-endurance">
-                    <p>' . $donnees['endurance'] . '</p>
+                    <p><?php echo $donnees['endurance'] ?></p>
                 </div>
                 <div class="col attaque-priorité">
-                    <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['priorite'].'.png" title="'.$donnees['priorite'].'">
-                </div>
-                <div class="col attaque-synergie">
-                    <p>' . $donnees['attente'] . '</p>
+                    <img class="icone_type" src="../imgs/icon_atk_sprites/<?php echo $donnees['priorite'] ?>.png" title="<?php echo $donnees['priorite'] ?>">
                 </div>
                 <div class="col attaque-attente">
-                    <img class="icone_type" src="../imgs/type_sprites/'.$donnees['synergie'].'.png" title="'.$donnees['synergie'].'" >
+                    <p><?php 
+                        if ($donnees['attente'] == 0) {
+                            echo '-';
+                        }
+                        else{
+                            echo $donnees['attente'] ;
+                        }?>
+                    </p>
                 </div>
-            </div>';
+                <div class="col attaque-synergie">
+                    <img class="icone_type" src="../imgs/type_sprites/<?php echo $donnees['synergie'] ?>.png" title="<?php echo $donnees['synergie'] ?>" >
+                </div>
+            </div>
+            <?php
         }
             $tempedie->closeCursor();
         }

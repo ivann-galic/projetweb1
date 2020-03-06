@@ -559,45 +559,75 @@ nav
 	margin: 0;
 }
 
-.type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent, .type_Terre {
+.type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent, .type_Terre, .type_Electrique, .type_Mental, .type_Mêlée, .type_Electrique, .type_Feu, .type_Numerique {
 	width: 160px;
 	text-align: center;
-	height: 44px;
-	line-height: 44px;
+	height: 40px;
+	line-height: 40px;
 	border-radius: 4px;
-	color: white;
-}
-
-.type_Toxic {
-	color: white;
+	color: white!important;
+	-webkit-text-stroke: 1px;
+	-webkit-text-stroke-color: #616161;
 }
 
 .type_Eau{
-	background-color: #45cbff;
+	background: rgb(70,203,255);
+	background: radial-gradient(circle, rgba(42,118,147,1) 10%, rgba(70,203,255,1) 90%);
 }
 
 .type_Toxic {
-	background-color: #5c565c;
+	background: rgb(0,0,0);
+	background: radial-gradient(circle, rgba(0,0,0,1) 10%, rgba(92,86,92,1) 90%);
 }
 
 .type_Nature {
-	background-color: #adde77;
+	background: rgb(109,139,76);
+	background: radial-gradient(circle, rgba(109,139,76,1) 10%, rgba(173,222,119,1) 90%);
 }
 
 .type_Vent {
-	background-color: #64cc9c;
+	background: rgb(70,144,110);
+	background: radial-gradient(circle, rgba(70,144,110,1) 10%, rgba(100,204,156,1) 90%);
 }
 
 .type_Terre {
-	background-color: #ba795b;
+	background: rgb(120,78,59);
+	background: radial-gradient(circle, rgba(120,78,59,1) 10%, rgba(186,121,91,1) 90%);
 }
 
 .type_Neutre {
-	background-color: #bccbce;
+	background: rgb(117,117,117);
+	background: radial-gradient(circle, rgba(117,117,117,1) 10%, rgba(224,224,224,1) 90%);
 }
 
 .type_Cristal {
-	background-color: #ea4a68;
+	background: rgb(145,47,65);
+	background: radial-gradient(circle, rgba(145,47,65,1) 10%, rgba(234,74,104,1) 90%);
+}
+
+.type_Electrique {
+	background: rgb(219,186,39);
+	background: radial-gradient(circle, rgba(219,186,39,1) 10%, rgba(255,229,76,1) 90%);
+}
+
+.type_Mêlée {
+	background: rgb(177,105,70);
+	background: radial-gradient(circle, rgba(177,105,70,1) 10%, rgba(250,146,96,1) 90%);
+}
+
+.type_Feu {
+	background: rgb(161,52,41);
+	background: radial-gradient(circle, rgba(161,52,41,1) 10%, rgba(232,92,78,1) 90%);
+}
+
+.type_Numerique {
+	background: rgb(69,90,100);
+	background: radial-gradient(circle, rgba(69,90,100,1) 10%, rgba(176,190,197,1) 90%);
+}
+
+.type_Mental {
+	background: rgb(103,57,87);
+	background: radial-gradient(circle, rgba(103,57,87,1) 10%, rgba(195,105,164,1) 90%);
 }
 
 .tempedie_espace_numero, .tempedie_espace_nom {
@@ -1022,6 +1052,63 @@ nav
 	border-radius: 4px;
 	color: white;
 }
+
+.type_Electrique {
+	 padding-top: 5px;
+	 padding-bottom: 5px;
+	 width: 160px;
+	 text-align: center;
+	 height: 40px;
+	 line-height: 40px;
+	 border-radius: 4px;
+	 color: white;
+ }
+
+.type_Mêlée {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_Feu {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_Numerique {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+.type_Mental {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 160px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	color: white;
+}
+
+
 
 /*#endregion RegionName*/
 

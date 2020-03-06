@@ -8,7 +8,7 @@
 
         <div class="card-fiche">
             <div class="fiche_espace_image">
-                <img src="../imgs/temtem_sprites/<?php echo $donnees['nom']; ?>.gif" alt="Platypet">
+                <img src="../imgs/temtem_sprites/<?php echo $donnees['nom']; ?>.gif">
             </div>
 
             <div class="fiche_espace_description">
@@ -121,53 +121,66 @@
         <?php
         while ($donnees = $capacites_temtem->fetch())
         {
-            echo '
+            ?>
             <div class="attaque">
 
             <div class="attaque_caracteristiques">
                 <div class="obtention">
-                <p>' . $donnees['methode'] . '</p>
+                <p><?php echo $donnees['methode'] ?></p>
             </div>
             <div class="niveau">
-                <p>' . $donnees['niveau'] . '</p>
+                <p><?php echo $donnees['niveau'] ?></p>
             </div>
             <div class="nom_attaque">
-                <p>' . $donnees['nom_capacite'] . '</p>
+                <p><?php echo $donnees['nom'] ?></p>
             </div>
             <div class="type_attaque">
-            <img class="icone_type" src="../imgs/type_sprites/'.$donnees['type'].'.png" title="'.$donnees['type'].'" >
+            <img class="icone_type" src="../imgs/type_sprites/<?php echo $donnees['type'] ?>.png" title="<?php echo $donnees['type'] ?>" >
                 </div>
                 <div class="categorie">
-                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['categorie'].'.png" title="'.$donnees['categorie'].'" >
+                <img class="icone_type" src="../imgs/icon_atk_sprites/<?php echo $donnees['categorie'] ?>.png" title="<?php echo $donnees['categorie'] ?>" >
                 </div>
                 <div class="puissance">
-                    <p>' . $donnees['puissance'] . '</p>
+                    <p><?php 
+                        if ($donnees['puissance'] == 0) {
+                            echo '-';
+                        }
+                        else{
+                            echo $donnees['puissance'] ;
+                        }?>         
+                    </p>
                 </div>
                 <div class="endurance">
-                    <p>' . $donnees['endurance'] . '</p>
+                    <p><?php echo $donnees['endurance'] ?></p>
                 </div>
                 <div class="priorité">
-                <img class="icone_type" src="../imgs/icon_atk_sprites/'.$donnees['priorite'].'.png" title="'.$donnees['priorite'].'">
+                <img class="icone_type" src="../imgs/icon_atk_sprites/<?php echo $donnees['priorite'] ?>.png" title="<?php echo $donnees['priorite'] ?>">
                 </div>
                 <div class="chargement">
-                    <p>' . $donnees['attente'] . '</p>
+                    <p><?php 
+                        if ($donnees['attente'] == 0) {
+                            echo '-';
+                        }
+                        else{
+                            echo $donnees['attente'] ;
+                        }?>         
+                    </p>
                 </div>
                 <div class="synergie">
-                <img class="icone_type" src="../imgs/type_sprites/'.$donnees['synergie'].'.png" title="'.$donnees['synergie'].'" >
+                <img class="icone_type" src="../imgs/type_sprites/<?php echo $donnees['synergie'] ?>.png" title="<?php echo $donnees['synergie'] ?>" >
                 </div>
             </div>
             <div class="attaque_description">
                 <div class="description">
-                    <p>' . $donnees['description'] . '</p>
+                    <p><?php echo $donnees['description'] ?></p>
                 </div>
             </div>
-        </div> ';
-        }
-            ?>
-
-
+        </div> 
         <?php
+        
+        }
         $capacites_temtem->closeCursor();
+        
         ?>
 
     </div>
