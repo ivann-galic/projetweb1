@@ -834,6 +834,20 @@ nav
 	width: 200px;
 	height: 360px;
 	font-weight: 600;
+	-webkit-text-stroke-color: #616161;
+}
+
+.stats-rouge {
+	color: #e25948;
+
+}
+
+.stats-vert {
+	color: #5ba659;
+}
+
+.stats-orange {
+	color: #ea992e;
 }
 
 .fiche_espace_stats2 p:first-child {

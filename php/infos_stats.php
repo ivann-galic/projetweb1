@@ -1,5 +1,7 @@
 <?php
 
+    include 'Outils.php';
+
     while ($donnees = $tempedie->fetch())
         {
     ?>
@@ -66,13 +68,13 @@
                 while ($donnees = $stats->fetch())
                 {
                     ?>
-                <p><?php echo $donnees['point_de_vie']; ?></p>
-                <p><?php echo $donnees['endurance']; ?></p>
-                <p><?php echo $donnees['vitesse']; ?></p>
-                <p><?php echo $donnees['attaque']; ?></p>
-                <p><?php echo $donnees['defense']; ?></p>
-                <p><?php echo $donnees['attaque_special']; ?></p>
-                <p><?php echo $donnees['defense_special']; ?></p>
+                <p class="<?php statsColorChange($donnees['point_de_vie']); ?>"><?php echo $donnees['point_de_vie']; ?></p>
+                <p class="<?php statsColorChange($donnees['endurance']); ?>"><?php echo $donnees['endurance']; ?></p>
+                <p class="<?php statsColorChange($donnees['vitesse']); ?>"><?php echo $donnees['vitesse']; ?></p>
+                <p class="<?php statsColorChange($donnees['attaque']); ?>"><?php echo $donnees['attaque']; ?></p>
+                <p class="<?php statsColorChange($donnees['defense']); ?>"><?php echo $donnees['defense']; ?></p>
+                <p class="<?php statsColorChange($donnees['attaque_special']); ?>"><?php echo $donnees['attaque_special']; ?></p>
+                <p class="<?php statsColorChange($donnees['defense_special']); ?>"><?php echo $donnees['defense_special']; ?></p>
                 <?php }
                 $stats->closeCursor();
                 ?>

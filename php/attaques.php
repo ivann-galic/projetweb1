@@ -76,7 +76,7 @@
         </div>
 
     <form class="row col-md-12 col-lg-12 text-center carte-titres-attaques" method="GET">
-                <div class="col-2 d-inline">
+                <div class="col-3 d-inline">
                     <?php
                         if (isset($_GET['nameASC'])) {
                             echo '<input type="submit" name="nameDESC" value="Nom"/>';
@@ -167,7 +167,7 @@
         while ($donnees = $attaque->fetch()) {
             ?>
             <div class="row col-12 align-items-center text-center carte-attaque">
-                <div class="col-2 attaque-nom">
+                <div class="col-3 attaque-nom">
                     <p><?php echo $donnees['nom'] ?> </p>
                 </div>
                 <div class="col attaque-type">
