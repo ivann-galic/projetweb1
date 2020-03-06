@@ -1,6 +1,65 @@
 <?php
 session_start();
+
+$strUrl = $_SERVER['QUERY_STRING'];
+$str_url = $_SERVER['PHP_SELF'];
+$temtemTitle;
+//si get nom existe et n'est pas vide -> title = nom
+if (stristr($strUrl, 'nom=')) {
+    $strNom = explode('=', $strUrl);
+    $temtemTitle = $strNom[1];
+}
+else{
+    $stringUrl = explode('/', $str_url);
+    if (count($stringUrl) === 3) {
+        $stringPath = $stringUrl[2];
+        $stringUrl = explode('/', $str_url);
+        $string_Path = explode('.', $stringPath);
+        $temtemstr = $string_Path[0];
+    }
+    else{
+        $stringPath = $stringUrl[1];
+        $string_Path = explode('.', $stringPath);
+        $temtemstr = $string_Path[0];
+    }
+switch ($temtemstr) {
+    case 'index':
+        $temtemTitle = 'Accueil';
+        break;
+    case 'tempedie':
+        $temtemTitle = 'Tempedie';
+        break;
+    case 'attaques':
+        $temtemTitle = 'Capacites';
+        break;
+    case 'trait':
+        $temtemTitle = 'Traits';
+        break; 
+    case 'connexion':
+        $temtemTitle = 'Connexion';
+        break;
+    case 'apropos':
+        $temtemTitle = 'A propos';
+        break;
+    case 'profil':
+        $temtemTitle = 'Profil';
+        break;
+
+    default:
+        $temtemTitle = 'Temtem';
+        break;
+}
+
+}
+//else -> path 
+
+
+
+
 ?>
+
+
+
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,7 +68,7 @@ session_start();
     <meta charset="utf-8" />
     <link rel="stylesheet"  href="../style.css"/>
     <script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
-    <title>Tempedie</title>
+    <title><?php echo $temtemTitle ?></title>
 </head>
 
 <body>
@@ -53,6 +112,9 @@ session_start();
                         <li>
                             <a class="lienBarreMenu-sans-bootsrap lien-sans-boostrap-cache" href="<?php $_SERVER['HTTP_HOST']?>/php/attaques.php"> <i class="fas fa-angle-right"></i> Capacites</a>
                         </li>
+                        <li>
+                            <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/php/trait.php"> <i class="fas fa-angle-right"></i> Trait</a>
+                        </li>
                     </div>
                     <li>
                         <?php
@@ -70,5 +132,6 @@ session_start();
                     </li>
                 </ul>
             </div>
+            
 
 	</header>
