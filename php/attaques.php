@@ -205,6 +205,12 @@
                 <div class="col attaque-synergie">
                     <img class="icone_type" src="../imgs/type_sprites/<?php echo $donnees['synergie'] ?>.png" title="<?php echo $donnees['synergie'] ?>" >
                 </div>
+
+                <div id="carte-attaque-description" class="col-12 align-items-center text-center carte-attaque-description">
+                    <div id="attaque-description" class="col-12 attaque-description">
+                        <p><?php echo $donnees['description'] ?> </p>
+                    </div>
+                </div>
             </div>
             <?php
         }

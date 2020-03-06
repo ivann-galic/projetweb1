@@ -3,20 +3,23 @@ $(document).ready(function () {
         $(this).find('.btn-navigation').toggleClass('white');
         $('.navigation').toggleClass('isOpen');
     });
-});
 
-$('.message a').click(function(){
-    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-});
 
-$(document).ready(function () {
+    $('.message a').click(function(){
+        $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+
     $("#menu-ressources").click(function(){
         $("#displayNone").slideToggle();
     });
-});
 
-$(document).ready(function () {
     $("#menu-ressources-sans-bootsrap").click(function(){
         $("#displayNone-sans-bootsrap").slideToggle();
     });
+
+    $(".carte-attaque").click(function(e){
+        $this = $(this).find(".carte-attaque-description");
+        $this.slideToggle();
+    });
+
 });

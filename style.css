@@ -1469,6 +1469,16 @@ nav
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 7px;
+	cursor: pointer;
+}
+
+.carte-attaque:hover {
+	background-color: #f3ffff;
+	transition: 0.5s;
+}
+
+.carte-attaque:focus-within {
+	background-color: #f3ffff;
 }
 
 .carte-attaque div {
@@ -1478,6 +1488,20 @@ nav
 
 .carte-attaque img {
 	height: 32px;
+}
+
+.carte-attaque-description {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	margin-bottom: 7px;
+	display: none;
+	height: auto;
+}
+
+.carte-attaque-description div {
+	height: auto;
+	line-height: 65px;
+	font-weight: 500;
 }
 
 /*#endregion RegionName*/
