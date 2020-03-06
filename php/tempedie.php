@@ -2,7 +2,7 @@
     include "header.php";
     include "bdd.php";
 
-    $tempedie = $bdd->query('SELECT * FROM tempedie');
+    $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY numero');
 	if(isset($_GET['search']) AND !empty($_GET['search'])) {
    		$search = htmlspecialchars($_GET['search']);
    		$tempedie = $bdd->query('SELECT * FROM tempedie WHERE nom LIKE "%'.$search.'%"');
