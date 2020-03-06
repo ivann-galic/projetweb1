@@ -1,3 +1,5 @@
+/*#region FONTFACE*/
+
 @font-face {
 	font-family: 'Roboto', sans-serif;
 	src: url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
@@ -8,6 +10,9 @@
 	src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 }
 
+/*#endregion RegionName*/
+
+/*#region BODY*/
 /* ---------- BODY ---------- */
 
 body, html {
@@ -19,6 +24,9 @@ body, html {
 body {
 	background-color: whitesmoke;
 }
+/*#endregion RegionName*/
+
+/*#region HEADER*/
 
 /* ---------- HEADER ---------- */
 
@@ -116,6 +124,10 @@ header {
 	text-align: center;
 }
 
+/*#endregion RegionName*/
+
+/*#region MENU BAR*/
+
 /* *** MENU BAR *** */
 
 nav
@@ -125,6 +137,87 @@ nav
 	text-align: center;
 }
 
+/*#endregion RegionName*/
+
+/*#region BURGER MENU SANS BOOTSTRAP*/
+
+/* *** BURGER MENU SANS BOOTSRAP *** */
+
+.navigation {
+	position: fixed;
+	float: left;
+	top: 0;
+	left: 0;
+	z-index: 800;
+	background-color: #fcc368;
+	width: 250px;
+	height: 100%;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	transition: transform .6s ease-in-out;
+	-webkit-transition: transform .6s ease-in-out;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+}
+
+.navigation.isOpen{
+	transform: translateX(0%);
+	-webkit-transform: translateX(0%);
+}
+
+.bgmenuSectionLiens-sans-bootsrap ul{
+	margin-top: 120px;
+	list-style: none;
+	padding: 0;
+}
+
+.bgmenuSectionLiens-sans-bootsrap li {
+	font-size: 17px;
+	margin-top: 3px;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+.bgmenuSectionLiens-sans-bootsrap p {
+	display: inline-block;
+	margin-top: 3px;
+	line-height: 40px;
+}
+
+.bgmenuSectionLiens-sans-bootsrap a {
+	display: inline-block;
+	line-height: 40px;
+	font-family: "Roboto", sans-serif;
+	color: black;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 200px!important;
+	height: 40px;
+	padding-left: 50px!important;
+}
+
+.bgmenuSectionLiens-sans-bootsrap li a:hover{
+	background-color: #764a68;
+	color: white;
+}
+
+.bgmenuSectionLiens-sans-bootsrap a:hover{
+	color: white;
+}
+
+#displayNone-sans-bootsrap {
+	display: none;
+}
+
+#displayNone-sans-bootsrap a {
+	padding-left: 70px!important;
+	width: 180px!important;
+}
+
+/*#endregion RegionName*/
+
+/*#region BURGER MENU*/
 
 /* *** BURGER MENU *** */
 
@@ -135,8 +228,9 @@ nav
 	left: 0;
 	z-index: 800;
 	background-color: #fcc368;
-	width: 270px;
+	width: 250px;
 	height: 100%;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 	transition: transform .6s ease-in-out;
 	-webkit-transition: transform .6s ease-in-out;
 	transform: translateX(-100%);
@@ -155,9 +249,10 @@ nav
 }
 
 .bgmenuSectionLiens li {
-	font-size: 19px;
+	font-size: 17px;
 	margin-top: 3px;
 	text-align: left;
+	letter-spacing: 1px;
 }
 
 .bgmenuSectionLiens p {
@@ -175,17 +270,37 @@ nav
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-weight: bold;
-	width: 220px;
+	width: 250px!important;
 	height: 40px;
-	padding-left: 50px;
+	padding-left: 50px!important;
 }
 
-.bgmenuSectionLiens a:hover{
+.bgmenuSectionLiens li a:hover{
 	background-color: #764a68;
 	color: white;
 }
 
+.bgmenuSectionLiens a:hover{
+	color: white;
+}
+
+#displayNone {
+	display: none;
+}
+
+#displayNone a {
+	padding-left: 70px!important;
+}
+
+/*#endregion RegionName*/
+
+/*#region HOME*/
+
 /* *** HOME *** */
+
+.container-home {
+	height: 100%;
+}
 
 .banniere_liste {
 	margin-top: 40px;
@@ -271,9 +386,11 @@ nav
 	width: 500px;
 }
 
+/*#endregion RegionName*/
+
+/*#region TEMPEDIE*/
 
 /* *** TEMPEDIE *** */
-
 
 .search::placeholder{
 	color: #5B5B5B;
@@ -372,7 +489,7 @@ nav
 	color: #5B5B5B;
 	border: none;
 	background-color: #fcc368;
-	background-image: url("../imgs/research.png");
+	background-image: url("imgs/research.png");
 	background-repeat: no-repeat;
 	background-size: 25px;
 	background-position: left 17px top 13px;
@@ -496,6 +613,10 @@ nav
 .tempedie_espace_image img {
 	height: 90px;
 }
+
+/*#endregion RegionName*/
+
+/*#region FICHE TEMTEM*/
 
 /* *** FICHE TEMTEM *** */
 
@@ -902,6 +1023,10 @@ nav
 	color: white;
 }
 
+/*#endregion RegionName*/
+
+/*#region CONNEXION*/
+
 /* *** CONNEXION *** */
 
 .container-profil {
@@ -1083,6 +1208,10 @@ nav
 	justify-content: center;
 }
 
+/*#endregion RegionName*/
+
+/*#region A PROPOS*/
+
 /* *** A PROPOS *** */
 
 .banniere_apropos {
@@ -1118,11 +1247,15 @@ nav
 	text-transform: uppercase;
 }
 
+/*#endregion RegionName*/
+
+/*#region ATTAQUES*/
+
 /* *** ATTAQUES *** */
 
 
 .container-attaques {
-	height: 600px;
+	height: auto;
 	margin-top: 110px;
 }
 
@@ -1130,6 +1263,7 @@ nav
 	height: auto;
 	float:none;
 	margin-top: 60px;
+	margin-bottom: 90px;
 }
 
 .espace-bannière-attaques img {
@@ -1137,10 +1271,9 @@ nav
 }
 
 .espace-form-attaques {
-	width: 1300px;
 	height: 50px;
-	margin-bottom: 30px;
-	margin-top: 30px;
+	margin-bottom: 20px;
+	padding: 0;
 }
 
 .formulaire-recherche-attaques input {
@@ -1166,7 +1299,7 @@ nav
 	color: #5B5B5B;
 	border: none;
 	background-color: #fcc368;
-	background-image: url("../imgs/research.png");
+	background-image: url("imgs/research.png");
 	background-repeat: no-repeat;
 	background-size: 25px;
 	background-position: left 17px top 13px;
@@ -1203,3 +1336,41 @@ nav
 	color: #764a68;
 	font-weight: 600;
 }
+
+.carte-titres-attaques {
+	background-color: #e2eeee;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.carte-titres-attaques div {
+	height: 65px;
+	line-height: 65px;
+}
+
+.carte-attaque {
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 7px;
+}
+
+.carte-attaque div {
+	height: 65px;
+	line-height: 65px;
+}
+
+.carte-attaque img {
+	height: 32px;
+}
+
+/*#endregion RegionName*/
+
+

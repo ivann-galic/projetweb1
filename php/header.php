@@ -39,31 +39,36 @@ session_start();
 
         <nav class="navigation">
 
-            <div class="bgmenuSectionLiens">
+            <div class="bgmenuSectionLiens-sans-bootsrap">
 
                 <ul>
                     <li>
-                        <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/index.php">Accueil</a>
+                        <a class="lienBarreMenu-sans-bootsrap" href="<?php $_SERVER['HTTP_HOST']?>/index.php">Accueil</a>
                     </li>
                     <li>
-                        <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/php/tempedie.php">Tempedie</a>
+                        <a class="lienBarreMenu-sans-bootsrap" href="<?php $_SERVER['HTTP_HOST']?>/php/tempedie.php">Tempedie</a>
                     </li>
                     <li>
-                        <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/php/attaques.php">Attaques</a>
+                        <a id="menu-ressources-sans-bootsrap" class="lienBarreMenu" href="#"> <!--onclick="document.getElementById('displayNone').style.display = 'block'"-->Ressources</a>
+                    </li>
+                    <div id="displayNone-sans-bootsrap">
+                        <li>
+                            <a class="lienBarreMenu-sans-bootsrap lien-sans-boostrap-cache" href="<?php $_SERVER['HTTP_HOST']?>/php/attaques.php"> <i class="fas fa-angle-right"></i> Capacites</a>
+                        </li>
+                    </div>
+                    <li>
+                        <?php
+                        if ($_SESSION['nom']) {
+                            echo '<a class="lienBarreMenu-sans-bootsrap" href="../php/profil.php?id='.$_SESSION["id"].'">Profil</a>';
+                        }
+                        else{
+                            echo '<a class="lienBarreMenu-sans-bootsrap" href="../php/connexion.php">Connexion</a>';
+                        }
+                        ?>
+
                     </li>
                     <li>
-                    	<?php 
-                    		if ($_SESSION['nom']) {
-                    			echo '<a class="lienBarreMenu" href="../php/profil.php?id='.$_SESSION["id"].'">Profil</a>';
-                    		}
-                    		else{
-                    			echo '<a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>';
-                    		}
-                    	?>
-                        
-                    </li>
-                    <li>
-                        <a class="lienBarreMenu" href="../php/apropos.php">A propos</a>
+                        <a class="lienBarreMenu-sans-bootsrap" href="../php/apropos.php">A propos</a>
                     </li>
                 </ul>
             </div>
