@@ -75,93 +75,92 @@
             </form>
         </div>
 
-            <div class="row col-12 text-center carte-titres-attaques">
-                <form class="formulaire-filtre" method="GET">
+    <form class="row col-md-12 col-lg-12 text-center carte-titres-attaques" method="GET">
                 <div class="col-2 d-inline">
                     <?php
                         if (isset($_GET['nameASC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
+                            echo '<input type="submit" name="nameDESC" value="Nom"/>';
                         }
                         else if (isset($_GET['nameDESC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="nameASC" value="Nom"/>';
+                            echo '<input type="submit" name="nameASC" value="Nom"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="nameDESC" value="Nom"/>';
+                            echo '<input type="submit"  name="nameDESC" value="Nom"/>';
                         }
                     ?>
                 </div>
                 <div class="col d-inline">
                     <?php
                         if (isset($_GET['typeASC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="typeDESC" value="Type"/>';
+                            echo '<input type="submit" name="typeDESC" value="Type"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="typeASC" value="Type"/>';
+                            echo '<input type="submit"  name="typeASC" value="Type"/>';
                         }
                     ?>
                 </div>
                 <div class="col d-inline">
                     <?php
                         if (isset($_GET['categorieASC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="categorieDESC" value="Catégorie"/>';
+                            echo '<input type="submit"  name="categorieDESC" value="Catégorie"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="categorieASC" value="Catégorie"/>';
+                            echo '<input type="submit"  name="categorieASC" value="Catégorie"/>';
                         }
                     ?>
                 </div>
                 <div class="col d-inline">
                     <?php
                         if (isset($_GET['puissanceDESC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="puissanceASC" value="Puissance"/>';
+                            echo '<input type="submit"  name="puissanceASC" value="Puissance"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="puissanceDESC" value="Puissance"/>';
+                            echo '<input type="submit"  name="puissanceDESC" value="Puissance"/>';
                         }
                     ?>
                 </div>
                 <div class="col d-inline">
                     <?php
                         if (isset($_GET['enduranceASC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="enduranceDESC" value="Endurance"/>';
+                            echo '<input type="submit" name="enduranceDESC" value="Endurance"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="enduranceASC" value="Endurance"/>';
+                            echo '<input type="submit" name="enduranceASC" value="Endurance"/>';
                         }
                     ?>
                 </div>
                 <div class="col d-inline">
                     <?php
                         if (isset($_GET['prioriteASC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="prioriteDESC" value="Priorité"/>';
+                            echo '<input type="submit" class="" name="prioriteDESC" value="Priorité"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="prioriteASC" value="Priorité"/>';
+                            echo '<input type="submit" class="" name="prioriteASC" value="Priorité"/>';
                         }
                     ?>
                 </div>
-                <div class="col d-inline">
+                <div class="col d-inline-block">
                     <?php
                         if (isset($_GET['attenteASC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="attenteDESC" value="Attente"/>';
+                            echo '<input type="submit" class="btn_filtre-attaques" name="attenteDESC" value="Attente"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="attenteASC" value="Attente"/>';
+                            echo '<input type="submit" class="btn_filtre-attaques" name="attenteASC" value="Attente"/>';
                         }
                     ?>
                 </div>
-                <div class="col d-inline">
+                <div class="col d-inline-block">
                     <?php
                         if (isset($_GET['synergieASC'])) {
-                            echo '<input type="submit" class="btn_filtre" name="synergieDESC" value="Synergie"/>';
+                            echo '<input type="submit" class="btn_filtre-attaques" name="synergieDESC" value="Synergie"/>';
                         }
                         else {
-                            echo '<input type="submit" class="btn_filtre" name="synergieASC" value="Synergie"/>';
+                            echo '<input type="submit" class="btn_filtre-attaques" name="synergieASC" value="Synergie"/>';
                         }
                     ?>
                 </div>
             </form>
-            </div>
+
 
     <?php
     if($attaque->rowCount() > 0) {
