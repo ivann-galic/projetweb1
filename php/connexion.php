@@ -1,5 +1,5 @@
 <?php
-    include "../php/header_connexion.php";
+    include "header.php";
     include "bdd.php";
 
 
@@ -70,7 +70,7 @@ if(isset($_POST['formconnexion'])) {
 }
 ?>
 
-    <div class="main-container">
+    <div class="container-profil">
         <div class="espace-connexion">
             <p>Connexion</p>
             <form method="POST" action="">
@@ -101,9 +101,8 @@ if(isset($_POST['formconnexion'])) {
             }
             ?>
         </div>
-    </div>
 
-        
+    </div>
 
 <?php
     include "../php/footer.php";

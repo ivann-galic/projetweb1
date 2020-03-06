@@ -8,3 +8,15 @@ $(document).ready(function () {
 $('.message a').click(function(){
     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
+
+$(document).ready(function () {
+    $("#menu-ressources").click(function(){
+        $("#displayNone").slideToggle();
+    });
+});
+
+$(document).ready(function () {
+    $("#menu-ressources-sans-bootsrap").click(function(){
+        $("#displayNone-sans-bootsrap").slideToggle();
+    });
+});

@@ -9,6 +9,7 @@ session_start();
 
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet"  href="../css/bootstrap.min.css"/>
     <link rel="stylesheet"  href="../style.css"/>
     <script src="https://kit.fontawesome.com/aa1f9c66ba.js" crossorigin="anonymous"></script>
     <title>Tempedie</title>
@@ -28,7 +29,6 @@ session_start();
                 if ($_SESSION['nom']){
                     echo '<a href="../php/profil.php?id='.$_SESSION['id'].'"><button class="connexion_btn"><i class="fas fa-user"></i></button></a>
                         <a href="../php/deconnexion.php"><button class="deconnexion_btn"><i class="fas fa-power-off"></i></button></a>';
-
                 }
                 else{
                     echo '<a href="../php/connexion.php"><button class="connexion_btn"><i class="fas fa-user"></i></button></a>';
@@ -39,36 +39,36 @@ session_start();
 
         <nav class="navigation">
 
-            <div class="bgmenuSectionLiens-sans-bootsrap">
+            <div class="bgmenuSectionLiens">
 
                 <ul>
                     <li>
-                        <a class="lienBarreMenu-sans-bootsrap" href="<?php $_SERVER['HTTP_HOST']?>/index.php">Accueil</a>
+                        <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/index.php">Accueil</a>
                     </li>
                     <li>
-                        <a class="lienBarreMenu-sans-bootsrap" href="<?php $_SERVER['HTTP_HOST']?>/php/tempedie.php">Tempedie</a>
+                        <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/php/tempedie.php">Tempedie</a>
                     </li>
                     <li>
-                        <a id="menu-ressources-sans-bootsrap" class="lienBarreMenu" href="#"> <!--onclick="document.getElementById('displayNone').style.display = 'block'"-->Ressources</a>
+                        <a id="menu-ressources" class="lienBarreMenu" href="#">Ressources</a>
                     </li>
-                    <div id="displayNone-sans-bootsrap">
+                    <div id="displayNone">
                         <li>
-                            <a class="lienBarreMenu-sans-bootsrap lien-sans-boostrap-cache" href="<?php $_SERVER['HTTP_HOST']?>/php/attaques.php"> <i class="fas fa-angle-right"></i> Capacites</a>
+                            <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/php/attaques.php"> <i class="fas fa-angle-right"></i> Capacites</a>
                         </li>
                     </div>
                     <li>
-                        <?php
-                        if ($_SESSION['nom']) {
-                            echo '<a class="lienBarreMenu-sans-bootsrap" href="../php/profil.php?id='.$_SESSION["id"].'">Profil</a>';
-                        }
-                        else{
-                            echo '<a class="lienBarreMenu-sans-bootsrap" href="../php/connexion.php">Connexion</a>';
-                        }
-                        ?>
-
+                    	<?php 
+                    		if ($_SESSION['nom']) {
+                    			echo '<a class="lienBarreMenu" href="../php/profil.php?id='.$_SESSION["id"].'">Profil</a>';
+                    		}
+                    		else{
+                    			echo '<a class="lienBarreMenu" href="../php/connexion.php">Connexion</a>';
+                    		}
+                    	?>
+                        
                     </li>
                     <li>
-                        <a class="lienBarreMenu-sans-bootsrap" href="../php/apropos.php">A propos</a>
+                        <a class="lienBarreMenu" href="../php/apropos.php">A propos</a>
                     </li>
                 </ul>
             </div>
