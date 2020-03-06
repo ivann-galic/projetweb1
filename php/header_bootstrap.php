@@ -55,6 +55,9 @@ session_start();
                         <li>
                             <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/php/attaques.php"> <i class="fas fa-angle-right"></i> Capacites</a>
                         </li>
+                        <li>
+                            <a class="lienBarreMenu" href="<?php $_SERVER['HTTP_HOST']?>/php/trait.php"> <i class="fas fa-angle-right"></i> Trait</a>
+                        </li>
                     </div>
                     <li>
                     	<?php 

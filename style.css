@@ -1482,4 +1482,17 @@ nav
 
 /*#endregion RegionName*/
 
+.carte-trait {
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 7px;
+	height: auto;
+}
 
+.trait-description {
+	height: auto;
+}
