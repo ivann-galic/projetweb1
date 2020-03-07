@@ -579,7 +579,7 @@ nav
 	border-image-slice: 8;
 	border-image-outset: 0.5;
 	border-image-repeat: round;
-	font-weight: 900;
+	font-weight: 500;
 	font-size: 19px;
 	letter-spacing: 2px;
 	font-family: 'Rubik', sans-serif;
@@ -1230,7 +1230,6 @@ nav
 
 /* *** ATTAQUES *** */
 
-
 .container-attaques {
 	height: auto;
 	margin-top: 110px;
@@ -1347,20 +1346,29 @@ nav
 	font-weight: 600;
 	margin-bottom: 7px;
 	cursor: pointer;
+	min-height: 65px;
 }
 
-.carte-attaque:hover {
+/*.carte-attaque:hover {
 	background-color: #f3ffff;
 	transition: 0.5s;
+}*/
+
+.down {
+	color: #81c784;
 }
 
-.carte-attaque:focus-within {
-	background-color: #f3ffff;
+.up {
+	color: #e57373;
 }
 
 .carte-attaque div {
-	height: 65px;
+	vertical-align: center;
 	line-height: 65px;
+}
+
+.carte-attaque div p {
+	margin-bottom: 0;
 }
 
 .carte-attaque img {
@@ -1372,14 +1380,80 @@ nav
 	font-size: 18px;
 	margin-bottom: 7px;
 	display: none;
-	height: auto;
+	padding-bottom: 20px;
+	cursor: auto;
 }
 
-.carte-attaque-description div {
+.attaque-description {
 	height: auto;
+	border: 1px #a4a4a4 solid;
+	border-radius: 5px;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.attaque-description p:first-child {
+	font-weight: 600;
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	letter-spacing: 1px;
+}
+
+.attaque-description p:nth-child(2) {
+	width: 100%;
+	line-height: 22px;
+	text-align: justify;
+	font-weight: 500;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+.attaque-temtem {
+	border-radius: 5px;
 	line-height: 65px;
 	font-weight: 500;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 10px;
+	border: 1px #a4a4a4 solid;
 }
+
+.attaque-temtem p:first-child {
+	font-weight: 600;
+	width: 100%;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	padding-top: 10px;
+}
+
+.attaque-description p:nth-child(2) {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.temtem-icon-attaque {
+	border: 1px #e2eeee solid;
+	border-radius: 8px;
+	background-color: white;
+	min-height: 50px;
+	cursor: pointer;
+	outline: 0;
+	margin-right: 30px;
+}
+
+.temtem-icon-attaque:hover {
+	opacity: 0.5;
+	transition: 0.5s;
+}
+
 
 /*#endregion RegionName*/
 

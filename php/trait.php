@@ -5,7 +5,7 @@
     $trait = $bdd->query('SELECT * FROM traits ORDER BY nom');
     if(isset($_GET['search']) AND !empty($_GET['search'])) {
         $search = htmlspecialchars($_GET['search']);
-        $attaque = $bdd->query('SELECT * FROM capacites WHERE nom LIKE "%'.$search.'%" ORDER BY nom');
+        $attaque = $bdd->query('SELECT * FROM traits WHERE nom LIKE "%'.$search.'%" ORDER BY nom');
     }
     if (isset($_GET['refresh'])) {
         $attaque = $bdd->query('SELECT * FROM capacites ORDER BY nom');
@@ -117,7 +117,7 @@
             </div>
             <?php
         }
-            $tempedie->closeCursor();
+            $trait->closeCursor();
         }
     ?>
 
