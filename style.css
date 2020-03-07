@@ -981,6 +981,10 @@ nav
 	padding-left: 10px;
 	padding-right: 10px;
 }
+.type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent, .type_Terre, .type_Electrique, .type_Mental, .type_Mêlée, .type_Feu, .type_Numerique{
+	-webkit-text-stroke: 1px;
+	-webkit-text-stroke-color: rgb(27, 26, 26);
+}
 
 .type_Eau{
 	background-color: #45cbff;
@@ -992,6 +996,7 @@ nav
 	line-height: 40px;
 	border-radius: 4px;
 	color: white;
+	
 }
 
 .type_Toxic {
