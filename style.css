@@ -581,8 +581,13 @@ nav
 	border-image-repeat: round;
 	font-weight: 900;
 	font-size: 19px;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 	font-family: 'Rubik', sans-serif;
+	text-shadow:
+			black 1px 1px 1px,
+			black -1px 1px 1px,
+			black -1px -1px 1px,
+			black 1px -1px 1px;
 }
 
 .type_Eau{
