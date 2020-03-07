@@ -10,6 +10,11 @@
 	src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 }
 
+@font-face {
+	font-family: 'Rubik', sans-serif;
+	src: url('https://fonts.googleapis.com/css?family=Rubik:400,500,700,900&display=swap');
+}
+
 /*#endregion RegionName*/
 
 /*#region BODY*/
@@ -560,73 +565,84 @@ nav
 }
 
 .type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent, .type_Terre, .type_Electrique, .type_Mental, .type_Mêlée, .type_Electrique, .type_Feu, .type_Numerique {
-	width: 160px;
 	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white!important;
-	-webkit-text-stroke-color: #616161;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 125px;
+	text-align: center;
+	height: 16px;
+	line-height: 16px;
+	color: white;
+	border-color: transparent;
+	border-style: solid;
+	border-width: 8px;
+	border-image-slice: 8;
+	border-image-outset: 0.5;
+	border-image-repeat: round;
+	font-weight: 900;
+	font-size: 19px;
+	letter-spacing: 1px;
+	font-family: 'Rubik', sans-serif;
 }
 
 .type_Eau{
-	background: rgb(70,203,255);
-	background: radial-gradient(circle, rgba(42,118,147,1) 10%, rgba(70,203,255,1) 90%);
+	background-color: #45cbff;
+	border-image-source: url(imgs/bordure-eau.png);
 }
 
 .type_Toxic {
-	background: rgb(0,0,0);
-	background: radial-gradient(circle, rgba(0,0,0,1) 10%, rgba(92,86,92,1) 90%);
+	background-color: #5c565c;
+	border-image-source: url(imgs/bordure-toxic.png);
 }
 
 .type_Nature {
-	background: rgb(109,139,76);
-	background: radial-gradient(circle, rgba(109,139,76,1) 10%, rgba(173,222,119,1) 90%);
+	background-color: #adde77;
+	border-image-source: url(imgs/bordure-nature.png);
 }
 
 .type_Vent {
-	background: rgb(70,144,110);
-	background: radial-gradient(circle, rgba(70,144,110,1) 10%, rgba(100,204,156,1) 90%);
+	background-color: #64cc9c;
+	border-image-source: url(imgs/bordure-vent.png);
 }
 
 .type_Terre {
-	background: rgb(120,78,59);
-	background: radial-gradient(circle, rgba(120,78,59,1) 10%, rgba(186,121,91,1) 90%);
+	background-color: #9d6954;
+	border-image-source: url(imgs/bordure-terre.png);
 }
 
 .type_Neutre {
-	background: rgb(117,117,117);
-	background: radial-gradient(circle, rgba(117,117,117,1) 10%, rgba(224,224,224,1) 90%);
+	background: #bdbdbd;
+	border-image-source: url(imgs/bordure-neutre.png);
 }
 
 .type_Cristal {
-	background: rgb(145,47,65);
-	background: radial-gradient(circle, rgba(145,47,65,1) 10%, rgba(234,74,104,1) 90%);
+	background-color: #ea4a68;
+	border-image-source: url(imgs/bordure-cristal.png);
 }
 
 .type_Electrique {
-	background: rgb(219,186,39);
-	background: radial-gradient(circle, rgba(219,186,39,1) 10%, rgba(255,229,76,1) 90%);
+	background: #fdd835;
+	border-image-source: url(imgs/bordure-electrique.png);
 }
 
 .type_Mêlée {
-	background: rgb(177,105,70);
-	background: radial-gradient(circle, rgba(177,105,70,1) 10%, rgba(250,146,96,1) 90%);
+	background: #f89261;
+	border-image-source: url(imgs/bordure-melee.png);
 }
 
 .type_Feu {
-	background: rgb(161,52,41);
-	background: radial-gradient(circle, rgba(161,52,41,1) 10%, rgba(232,92,78,1) 90%);
+	background: #e85c4e;
+	border-image-source: url(imgs/bordure-feu.png);
 }
 
 .type_Numerique {
-	background: rgb(69,90,100);
-	background: radial-gradient(circle, rgba(69,90,100,1) 10%, rgba(176,190,197,1) 90%);
+	background: #7A8B93;
+	border-image-source: url(imgs/bordure-numerique.png);
 }
 
 .type_Mental {
 	background: rgb(103,57,87);
-	background: radial-gradient(circle, rgba(103,57,87,1) 10%, rgba(195,105,164,1) 90%);
+	border-image-source: url(imgs/bordure-mental.png);
 }
 
 .tempedie_espace_numero, .tempedie_espace_nom {
@@ -776,9 +792,6 @@ nav
 	align-items: center;
 	height: 90px;
 	width: 500px;
-	font-size: 20px;
-	letter-spacing: 1px;
-	font-weight: 600;
 }
 
 .type-fiche p:first-child {
@@ -981,152 +994,6 @@ nav
 	padding-left: 10px;
 	padding-right: 10px;
 }
-.type_Eau, .type_Cristal, .type_Nature, .type_Neutre, .type_Toxic, .type_Vent, .type_Terre, .type_Electrique, .type_Mental, .type_Mêlée, .type_Feu, .type_Numerique{
-	-webkit-text-stroke: 1px;
-	-webkit-text-stroke-color: rgb(27, 26, 26);
-}
-
-.type_Eau{
-	background-color: #45cbff;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-	
-}
-
-.type_Toxic {
-	background-color: #5c565c;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Nature {
-	background-color: #adde77;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Vent {
-	background-color: #64cc9c;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Terre {
-	background-color: #ba795b;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Neutre {
-	background-color: #bccbce;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: black;
-}
-
-.type_Cristal {
-	background-color: #ea4a68;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Electrique {
-	 padding-top: 5px;
-	 padding-bottom: 5px;
-	 width: 160px;
-	 text-align: center;
-	 height: 40px;
-	 line-height: 40px;
-	 border-radius: 4px;
-	 color: white;
- }
-
-.type_Mêlée {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Feu {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Numerique {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-.type_Mental {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	width: 160px;
-	text-align: center;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 4px;
-	color: white;
-}
-
-
 
 /*#endregion RegionName*/
 
