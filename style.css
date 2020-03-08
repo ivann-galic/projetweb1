@@ -242,7 +242,7 @@ nav
 	-webkit-transform: translateX(-100%);
 }
 
-.navigation.isOpen{
+.isOpen{
 	transform: translateX(0%);
 	-webkit-transform: translateX(0%);
 }
