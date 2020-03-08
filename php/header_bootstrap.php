@@ -18,7 +18,6 @@ session_start();
 <body>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
-    <script src="../js/attaques.js"></script>
     <script src="../js/tempedie.js"></script>
     <script src="../js/app.js"></script>
 	<header>
