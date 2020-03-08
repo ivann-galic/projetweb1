@@ -18,18 +18,16 @@ $(document).ready(function () {
 
     $(".carte-attaque").click(function(e){
         $this = $(this).find(".carte-attaque-description");
+
+        if ($(this).find('.up').length) {
+            $(this).find('.up').html('<i class=\"fas fa-angle-double-down\"></i>');
+            $(this).find('.up').removeClass('up').addClass('down');
+        }else if($(this).find('.down').length) {
+            $(this).find('.down').html('<i class=\"fas fa-angle-double-up\"></i>');
+            $(this).find('.down').removeClass('down').addClass('up');
+        }
+
         $this.slideToggle();
-
-        var state = document.getElementById('chevron');
-
-        if(state.className === "down") {
-            document.getElementById("chevron").innerHTML = "<i class=\"fas fa-angle-double-up\"></i>";
-            document.getElementById("chevron").className = "up";
-        } else if (state.className === "up") {
-            document.getElementById("chevron").innerHTML = "<i class=\"fas fa-angle-double-down\"></i>";
-            document.getElementById("chevron").className = "down";
-            }
-
     });
 
 });

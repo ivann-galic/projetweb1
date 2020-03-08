@@ -166,9 +166,9 @@
     if($attaque->rowCount() > 0) {
         while ($donnees = $attaque->fetch()) {
             ?>
-            <div class="row col-12 align-items-center text-center carte-attaque">
+            <div id="carte-attaque" class="row col-12 align-items-center text-center carte-attaque" >
                 <div class="col">
-                    <p id="chevron" class="down"><i class="fas fa-angle-double-down"></i></p>
+                    <p class="down"><i class="fas fa-angle-double-down"></i></p>
                 </div>
                 <div class="col-3 attaque-nom">
                     <p><?php echo $donnees['nom']; ?> </p>
