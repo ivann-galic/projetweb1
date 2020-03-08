@@ -569,7 +569,6 @@ nav
 	padding-top: 5px;
 	padding-bottom: 5px;
 	width: 125px;
-	text-align: center;
 	height: 16px;
 	line-height: 16px;
 	color: white;
@@ -1373,6 +1372,22 @@ nav
 
 .carte-attaque img {
 	height: 32px;
+}
+
+.texte-attaque-endurance {
+	border-radius: 50%;
+	background-color: #00b3b3;
+	background-size: 30px;
+	line-height: 39px;
+	width: 39px;
+	margin-left: 20px;
+	color: white;
+	font-size: 17px;
+	text-shadow:
+			black 1px 1px 1px,
+			black -1px 1px 1px,
+			black -1px -1px 1px,
+			black 1px -1px 1px;
 }
 
 .carte-attaque-description {

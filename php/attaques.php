@@ -190,7 +190,7 @@
                     </p>
                 </div>
                 <div class="col attaque-endurance">
-                    <p><?php echo $donnees['endurance'] ?></p>
+                    <p class="texte-attaque-endurance"><?php echo $donnees['endurance'] ?></p>
                 </div>
                 <div class="col attaque-priorité">
                     <img class="icone_type" src="../imgs/icon_atk_sprites/<?php echo $donnees['priorite'] ?>.png" title="<?php echo $donnees['priorite'] ?>">
