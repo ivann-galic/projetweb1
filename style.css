@@ -1468,7 +1468,7 @@ nav
 
 .temtem-icon-attaque {
 	border: 1px #e2eeee solid;
-	border-radius: 8px;
+	border-radius: 180px;
 	background-color: white;
 	min-height: 50px;
 	cursor: pointer;
@@ -1483,6 +1483,8 @@ nav
 
 
 /*#endregion RegionName*/
+
+/*#region TRAITS*/
 
 .container-traits {
 	height: auto;
@@ -1656,7 +1658,7 @@ nav
 
 .temtem-icon-traits {
 	border: 1px #e2eeee solid;
-	border-radius: 8px;
+	border-radius: 180px;
 	background-color: white;
 	max-height: 50px;
 	cursor: pointer;
@@ -1668,3 +1670,5 @@ nav
 	opacity: 0.5;
 	transition: 0.5s;
 }
+
+/*#endregion RegionName*/
