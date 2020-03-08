@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('.navigation').toggleClass('isOpen');
     });
 
-    $(".container-attaques").click(function()
+    $(".page").click(function()
     {
         $(".navigation").removeClass( "navigation isOpen" ).addClass( "navigation" );
     });

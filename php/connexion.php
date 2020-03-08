@@ -70,7 +70,7 @@ if(isset($_POST['formconnexion'])) {
 }
 ?>
 
-    <div class="container-profil">
+    <div class="container-profil page">
         <div class="espace-connexion">
             <p>Connexion</p>
             <form method="POST" action="">

@@ -60,7 +60,7 @@
     }
 ?>
 
-<div class="container container-attaques">
+<div class="container container-attaques page">
         <div class="row">
             <div class="center-block espace-bannière-attaques">
                 <img src="../imgs/capacites.png" alt="Capacités bannière">

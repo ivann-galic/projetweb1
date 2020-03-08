@@ -8,4 +8,17 @@
             echo 'stats-vert';
         };
     }
+
+    function powerColorChange($info) {
+        if ($info === 0) {
+            echo '';
+        } else if ($info <= 70) {
+            echo 'puissance-rouge';
+        } else if ($info > 71 && $info <= 100) {
+            echo 'puissance-orange';
+        } else {
+            echo 'puissance-vert';
+        };
+    }
+
 ?>

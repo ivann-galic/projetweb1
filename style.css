@@ -1390,6 +1390,18 @@ nav
 			black 1px -1px 1px;
 }
 
+.puissance-rouge {
+	color: #e25948;
+}
+
+.puissance-vert {
+	color: #5ba659;
+}
+
+.puissance-orange {
+	color: #ea992e;
+}
+
 .carte-attaque-description {
 	font-family: "Roboto", sans-serif;
 	font-size: 18px;

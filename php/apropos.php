@@ -2,7 +2,7 @@
     include "header.php";
 ?>
 
-    <div class="container-apropos">
+    <div class="container-apropos page">
 
         <p> Les Fondateurs du site :</p>
         <div class="banniere_apropos">

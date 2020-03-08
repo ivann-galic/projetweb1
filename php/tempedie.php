@@ -35,7 +35,7 @@
         $tempedie = $bdd->query('SELECT * FROM tempedie ORDER BY type_2 DESC');
     }
 ?>
-    <div class="container">
+    <div class="container page">
 
         <div class="banniere_liste">
             <img src="../imgs/liste.png" alt="Liste des Temtem">

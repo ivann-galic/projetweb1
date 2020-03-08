@@ -59,7 +59,7 @@
     }
 ?>
 
-<div class="container container-attaques">
+<div class="container page container-attaques">
         <div class="row">
             <div class="center-block espace-bannière-attaques">
                 <img src="../imgs/capacites.png" alt="Capacités bannière">
@@ -180,7 +180,17 @@
                     <img class="icone_type" src="../imgs/icon_atk_sprites/<?php echo $donnees['categorie'] ?>.png" title="'<?php echo $donnees['categorie'] ?>'" >
                 </div>
                 <div class="col attaque-puissance">
-                    <p><?php
+                    <p class="<?php
+                    if ($donnees['puissance'] == 0) {
+                        echo '';
+                    } else if ($donnees['puissance'] <= 70) {
+                        echo 'puissance-rouge';
+                    } else if ($donnees['puissance'] > 71 && $donnees['puissance'] <= 100) {
+                        echo 'puissance-orange';
+                    } else {
+                        echo 'puissance-vert';
+                    }?>">
+                        <?php
                         if ($donnees['puissance'] == 0) {
                             echo '-';
                         }
@@ -188,6 +198,7 @@
                             echo $donnees['puissance'] ;
                         }?>
                     </p>
+
                 </div>
                 <div class="col attaque-endurance">
                     <p class="texte-attaque-endurance"><?php echo $donnees['endurance'] ?></p>
@@ -218,13 +229,16 @@
                         <p>Temtem apprenant l'attaque <?php echo $donnees['nom'] ?> :</p>
                         <?php
                         $temtemAttaque = $bdd->query('SELECT nom_temtem FROM capacites_temtem AS ct INNER JOIN capacites c ON ct.nom_capacite = c.nom WHERE c.nom =\'' . addslashes($donnees['nom']) . '\';');
-                        if($attaque->rowCount() > 0) {
+                        if($temtemAttaque->rowCount() > 0) {
                             while ($donnees = $temtemAttaque->fetch()) {
                                 ?>
                                 </a><img class="temtem-icon-attaque d-inline" src="../imgs/icons_temtem/<?php echo $donnees['nom_temtem'] ?>.png"
                                          onclick="document.location='../php/itemtem.php?nom=<?php echo $donnees['nom_temtem'] ?>'">
                                 <?php
                             }
+                        } else {
+                            echo '<p class="erreur-aucun-temtem"><i class="fas fa-info-circle"></i> Aucun Temtem ne peut apprendre cette attaque pour le moment. </p>';
+
                         }
                         ?>
                     </div>

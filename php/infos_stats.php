@@ -6,7 +6,7 @@
         {
     ?>
 
-    <div class="container-fiche">
+    <div class="container-fiche page">
 
         <div class="card-fiche">
             <div class="fiche_espace_image">
