@@ -217,7 +217,7 @@
                     <div class="col-12 attaque-temtem">
                         <p>Temtem apprenant l'attaque <?php echo $donnees['nom'] ?> :</p>
                         <?php
-                        $temtemAttaque = $bdd->query('SELECT nom_temtem FROM capacites_temtem AS ct INNER JOIN capacites c ON ct.nom_capacite = c.nom WHERE c.nom =\'' . $donnees['nom'] . '\';');
+                        $temtemAttaque = $bdd->query('SELECT nom_temtem FROM capacites_temtem AS ct INNER JOIN capacites c ON ct.nom_capacite = c.nom WHERE c.nom =\'' . addslashes($donnees['nom']) . '\';');
                         if($attaque->rowCount() > 0) {
                             while ($donnees = $temtemAttaque->fetch()) {
                                 ?>
