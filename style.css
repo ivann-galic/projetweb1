@@ -1336,6 +1336,11 @@ nav
 	outline: 0;
 }
 
+.temcard-icon {
+	height: 40px;
+	margin-top: 12px;
+}
+
 .carte-attaque {
 	background-color: white;
 	border-radius: 5px;
@@ -1467,9 +1472,10 @@ nav
 }
 
 .temtem-icon-attaque {
-	border: 1px #e2eeee solid;
+	border: 1px black solid;
 	border-radius: 180px;
-	background-color: white;
+	background: rgb(176,190,197);
+	background: linear-gradient(180deg, rgba(176,190,197,1) 58%, rgba(236,239,241,1) 100%);
 	min-height: 50px;
 	cursor: pointer;
 	outline: 0;
@@ -1657,9 +1663,10 @@ nav
 }
 
 .temtem-icon-traits {
-	border: 1px #e2eeee solid;
+	border: 1px black solid;
 	border-radius: 180px;
-	background-color: white;
+	background: rgb(176,190,197);
+	background: linear-gradient(180deg, rgba(176,190,197,1) 58%, rgba(236,239,241,1) 100%);
 	max-height: 50px;
 	cursor: pointer;
 	outline: 0;
